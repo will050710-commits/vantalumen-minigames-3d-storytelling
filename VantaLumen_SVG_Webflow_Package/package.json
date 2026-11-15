@@ -1,0 +1,7 @@
+{
+  "name": "vantalumen-rise-svg-story",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": { "build": "python tools/build.py", "test": "node tests/qa.cjs" },
+  "devDependencies": { "jsdom": "26.1.0" }
+}

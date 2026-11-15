@@ -1,0 +1,145 @@
+<svg id="vl-svg-stage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" role="group" aria-labelledby="vl-svg-title vl-svg-desc">
+  <title id="vl-svg-title">RISE’s illustrated interplanetary journey</title>
+  <desc id="vl-svg-desc">Seven vector scenes follow RISE from a child’s dream to the Moon and Mars, through discovery, learning and conservation.</desc>
+  <defs>
+    <g id="art-eagle" stroke="#233d47" stroke-width="3" stroke-linejoin="round">
+      <g id="eagle-legs-back" fill="none" stroke="#9b803f" stroke-width="9"><path id="eagle-leg-back-left" d="M-75-35L-135 65"/><path id="eagle-leg-back-right" d="M75-35L135 65"/></g>
+      <g id="eagle-engine"><path id="eagle-engine-nozzle" d="M-24 38L-42 84Q0 105 42 84L24 38Z" fill="#53616a"/><path id="eagle-engine-rim" d="M-42 84Q0 65 42 84Q0 104-42 84Z" fill="#233d47"/></g>
+      <g id="eagle-descent-stage"><path id="eagle-stage-top" d="M-110-56L-35-99 109-52 38-12Z" fill="#edcc7b"/><path id="eagle-stage-front" d="M-110-56L38-12 38 55-110 12Z" fill="#d9a953"/><path id="eagle-stage-side" d="M38-12L109-52 109 14 38 55Z" fill="#b58239"/><path id="eagle-foil-lines" d="M-86-44L-86 19M-44-31L-44 30M-4-18L-4 42M69-28L69 38" fill="none" stroke="#f4d99e" stroke-width="2"/><path id="eagle-platform" d="M-35-99L-21-115 31-99 18-83Z" fill="#b4c5c8"/></g>
+      <g id="eagle-legs-front" fill="none" stroke="#d6b36e" stroke-width="9"><path id="eagle-leg-front-left" d="M-70-17L-158 99M-72 17L-158 99"/><path id="eagle-leg-front-right" d="M65-5L142 104M64 28L142 104"/></g>
+      <g id="eagle-footpads" fill="#e6c77b"><path id="eagle-footpad-left" d="M-192 98Q-158 84-124 99L-126 111Q-158 124-190 111Z"/><path id="eagle-footpad-right" d="M108 104Q142 89 176 104L174 116Q142 128 110 116Z"/></g>
+    </g>
+    <g id="art-spirit" stroke="#233d47" stroke-width="3" stroke-linejoin="round">
+      <g id="spirit-chassis"><path id="spirit-body" d="M-92-9L20-50 98-2 1 42-92 14Z" fill="#dfb86d"/><path id="spirit-suspension" d="M-92 22L-125 73-12 114M98 17L126 76 18 119" fill="none" stroke="#607076" stroke-width="10"/></g>
+      <g id="spirit-wheels" fill="#30444b"><ellipse id="spirit-wheel-back-left" cx="-124" cy="44" rx="22" ry="29"/><ellipse id="spirit-wheel-mid-left" cx="-132" cy="84" rx="22" ry="29"/><ellipse id="spirit-wheel-front-left" cx="-55" cy="111" rx="22" ry="29"/><ellipse id="spirit-wheel-back-right" cx="108" cy="43" rx="22" ry="29"/><ellipse id="spirit-wheel-mid-right" cx="133" cy="79" rx="22" ry="29"/><ellipse id="spirit-wheel-front-right" cx="57" cy="112" rx="22" ry="29"/></g>
+      <g id="spirit-solar-array"><path id="spirit-solar-surface" d="M-170-42L-24-112 172-37 21 46Z" fill="#5687b5"/><path id="spirit-solar-grid" d="M-127-62L65 21M-81-85L114-5M-114-17L29-92M-57 7L86-70M-3 30L143-48" fill="none" stroke="#c4e1eb" stroke-width="2"/><path id="spirit-solar-edge" d="M-170-42L21 46 172-37 172-26 21 57-170-30Z" fill="#355878"/></g>
+      <g id="spirit-camera-mast"><path id="spirit-mast-pole" d="M4-57L4-174" fill="none" stroke="#b4c5c8" stroke-width="12"/><path id="spirit-camera-head" d="M-32-192L26-208 54-191 54-167-3-153-32-168Z" fill="#d4e1dc"/><path id="spirit-camera-face" d="M-32-192L-3-177 54-191 54-167-3-153-32-168Z" fill="#a6bbc0"/><circle id="spirit-camera-left" cx="10" cy="-171" r="7" fill="#233d47"/><circle id="spirit-camera-right" cx="34" cy="-177" r="7" fill="#233d47"/></g>
+      <g id="spirit-arm"><path id="spirit-arm-link" d="M-51 27L-93 104-7 152" fill="none" stroke="#b2bcb9" stroke-width="10"/><circle id="spirit-arm-tool" cx="-6" cy="153" r="17" fill="#b2bcb9"/></g>
+    </g>
+    <g id="art-moon"><circle id="moon-disc" r="124" fill="#c7d4d0" stroke="#29454d" stroke-width="2.5"/><path id="moon-shadow" d="M33-119C153-69 144 93 31 120C98 34 95-55 33-119Z" fill="#9dada9"/><g id="moon-craters" fill="#adbfba"><ellipse id="moon-crater-a" cx="-45" cy="-40" rx="25" ry="21"/><ellipse id="moon-crater-b" cx="24" cy="54" rx="32" ry="26"/><circle id="moon-crater-c" cx="-62" cy="48" r="13"/><circle id="moon-crater-d" cx="24" cy="-73" r="10"/></g></g>
+    <g id="art-mars"><circle id="mars-disc" r="140" fill="#df8c65" stroke="#6d483e" stroke-width="2.5"/><path id="mars-shadow" d="M39-134C174-73 162 107 41 133C100 50 108-67 39-134Z" fill="#c06b4f"/><g id="mars-surface-marks" fill="none" stroke="#c47154" stroke-width="14" stroke-linecap="round"><path id="mars-ridge-a" d="M-90-32Q-47-71 12-39"/><path id="mars-ridge-b" d="M-70 66Q-6 32 38 54"/><path id="mars-ridge-c" d="M-30-101L8-101"/></g></g>
+    <!-- Future-only surface masks. Sand stays attached to each moving body. -->
+    <clipPath id="future-eagle-top-clip"><use href="#eagle-stage-top"/></clipPath>
+    <clipPath id="future-eagle-front-clip"><use href="#eagle-stage-front"/></clipPath>
+    <clipPath id="future-eagle-side-clip"><use href="#eagle-stage-side"/></clipPath>
+    <clipPath id="future-spirit-solar-clip"><use href="#spirit-solar-surface"/></clipPath>
+    <clipPath id="future-spirit-body-clip"><use href="#spirit-body"/></clipPath>
+  </defs>
+  <g id="background-decoration" aria-hidden="true">
+    <circle id="background-wash" cx="520" cy="425" r="330" fill="#e7eddf"/>
+    <path id="background-orbit" d="M126 493C156 111 746 10 889 335S642 853 303 736" fill="none" stroke="#c8d1c3" stroke-width="1.5" stroke-dasharray="3 11"/>
+    <g id="background-stars" fill="#d2aa4d"><path id="star-west" d="M146 337L153 359 175 366 153 373 146 395 139 373 117 366 139 359Z"/><path id="star-east" d="M849 255L855 272 872 278 855 284 849 301 843 284 826 278 843 272Z"/><path id="star-north" d="M622 116L627 130 641 135 627 140 622 154 617 140 603 135 617 130Z"/><circle id="star-dot-a" cx="767" cy="685" r="4"/><circle id="star-dot-b" cx="268" cy="212" r="4"/><circle id="star-dot-c" cx="898" cy="490" r="3"/></g>
+  </g>
+  <g id="scene-origin" data-scene="0" opacity="1">
+    <g id="origin-orbits" fill="none" stroke="#92ada6" stroke-width="1.5"><ellipse id="origin-orbit-outer" cx="500" cy="455" rx="300" ry="195" transform="rotate(-25 500 455)"/><ellipse id="origin-orbit-inner" cx="500" cy="455" rx="275" ry="160" transform="rotate(24 500 455)"/></g>
+    <path id="origin-flight-trail" d="M209 699C439 781 853 669 814 438" fill="none" stroke="#3b85e9" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 10"/>
+    <g id="origin-child-sketch" transform="translate(720 590) rotate(12)"><rect id="origin-note-shadow" x="7" y="10" width="155" height="157" rx="6" fill="#243d48" fill-opacity="0.1255"/><rect id="origin-note-paper" width="155" height="157" rx="6" fill="#fffdf4" stroke="#d3cdbd"/><path id="origin-pencil-head" d="M47 68C28 18 123 13 117 68C114 112 47 118 47 68Z M43 49Q81 11 121 48M61 63L63 68M96 62L98 67M71 83Q80 94 91 82" fill="none" stroke="#6b8492" stroke-width="2.5" stroke-linecap="round"/><path id="origin-pencil-star" d="M20 18L23 28 34 30 24 35 25 46 17 39 7 43 11 32 4 25 15 26Z" fill="none" stroke="#d0aa46" stroke-width="2"/><text id="origin-note-text" x="77" y="140" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#657b86">“let’s hug the stars”</text></g>
+    <g id="origin-eight-label" transform="translate(185 562)"><circle id="origin-label-dot" r="4" fill="#2d77cc"/><path id="origin-label-line" d="M0 0L-39 55H51" fill="none" stroke="#9aafa4"/><text id="origin-label-text" x="-40" y="78" fill="#6c817b" font-family="monospace" font-size="12">IMAGINED AT AGE 8</text></g>
+  </g>
+  <g id="scene-worlds" data-scene="1" opacity="0" aria-hidden="true">
+    <path id="worlds-connecting-orbit" d="M170 395Q500 190 841 410" fill="none" stroke="#9eb4aa" stroke-dasharray="5 9" stroke-width="2"/>
+    <g id="worlds-moon-choice" data-svg-world="moon" role="button" tabindex="-1" aria-label="Choose the Moon" transform="translate(292 377)"><use id="worlds-moon-art" href="#art-moon"/><circle id="worlds-moon-beacon" cx="-34" cy="28" r="10" fill="#fff9d6" stroke="#537e61" stroke-width="3"/><circle id="worlds-moon-pulse" cx="-34" cy="28" r="22" fill="none" stroke="#537e61" stroke-width="2"/><text id="worlds-moon-label" x="0" y="175" text-anchor="middle" fill="#233d47" font-size="20" font-family="Arial,sans-serif">THE MOON</text></g>
+    <g id="worlds-mars-choice" data-svg-world="mars" role="button" tabindex="-1" aria-label="Choose Mars" transform="translate(702 377)"><use id="worlds-mars-art" href="#art-mars"/><circle id="worlds-mars-beacon" cx="-32" cy="13" r="10" fill="#fff9d6" stroke="#9c5442" stroke-width="3"/><circle id="worlds-mars-pulse" cx="-32" cy="13" r="22" fill="none" stroke="#9c5442" stroke-width="2"/><text id="worlds-mars-label" x="0" y="191" text-anchor="middle" fill="#233d47" font-size="20" font-family="Arial,sans-serif">MARS</text></g>
+  </g>
+  <g id="scene-landing" data-scene="2" opacity="0" aria-hidden="true">
+    <g id="landing-moon" data-world-layer="moon"><path id="lunar-horizon" d="M100 568Q307 465 499 537T925 528L925 741Q505 844 100 741Z" fill="#c4d3ca"/><path id="lunar-front-ridge" d="M100 681Q270 581 496 654T925 641L925 741Q505 844 100 741Z" fill="#adc2b5"/><ellipse id="lunar-crater" cx="720" cy="687" rx="91" ry="28" fill="#8fa89d"/><ellipse id="lunar-crater-light" cx="714" cy="694" rx="76" ry="18" fill="#c1d2c5"/><use id="landing-eagle" href="#art-eagle" transform="translate(592 531) scale(.83)"/></g>
+    <g id="landing-mars" data-world-layer="mars" display="none"><path id="martian-horizon" d="M100 568Q230 437 417 522T925 528L925 741Q505 844 100 741Z" fill="#dca483"/><path id="martian-front-ridge" d="M100 681Q270 581 496 654T925 641L925 741Q505 844 100 741Z" fill="#ca8667"/><path id="martian-rover-tracks" d="M563 649Q587 706 808 751M609 648Q640 699 839 729" fill="none" stroke="#aa6e56" stroke-width="6" stroke-dasharray="4 11"/><use id="landing-spirit" href="#art-spirit" transform="translate(600 543) scale(.8)"/></g>
+    <g id="landing-beacon" transform="translate(606 385)"><path id="landing-beacon-stem" d="M0 0V80" stroke="#3b85e9" stroke-width="2" stroke-dasharray="4 7"/><circle id="landing-beacon-halo" r="23" fill="#3b85e9" fill-opacity="0.102"/><circle id="landing-beacon-core" r="8" fill="#3b85e9"/></g>
+  </g>
+  <g id="scene-discovery" data-scene="3" opacity="0" aria-hidden="true">
+    <g id="discovery-archive-frame"><rect id="archive-frame-shadow" x="217" y="317" width="503" height="375" rx="24" fill="#213e3c" fill-opacity="0.0627"/><rect id="archive-frame-base" x="200" y="300" width="503" height="375" rx="24" fill="#fffdf3" stroke="#a9bdb0" stroke-width="2"/><path id="archive-frame-header" d="M200 360H703" stroke="#d4ddce" stroke-width="2"/><text id="archive-label" x="232" y="339" font-family="monospace" font-size="13" letter-spacing="2" fill="#678174">HERITAGE ARCHIVE / 001</text></g>
+    <use id="discovery-eagle" data-world-layer="moon" href="#art-eagle" transform="translate(457 502) scale(.78)"/>
+    <use id="discovery-spirit" data-world-layer="mars" display="none" href="#art-spirit" transform="translate(457 520) scale(.7)"/>
+    <g id="discovery-dust" fill="#b9ad92" opacity=".85"><path id="dust-cloud-left" d="M239 443Q219 399 267 394Q297 358 330 401Q378 385 385 439Q359 477 310 459Q266 484 239 443Z"/><path id="dust-cloud-center" d="M375 535Q342 493 382 464Q431 426 469 474Q531 451 544 511Q512 550 467 536Q418 575 375 535Z"/><path id="dust-cloud-right" d="M541 415Q525 379 568 376Q605 350 631 389Q680 378 674 426Q646 458 606 443Q560 462 541 415Z"/></g>
+    <g id="discovery-brush" transform="translate(630 590) rotate(-28)"><path id="brush-handle" d="M-13-100Q0-121 13-100L13 0H-13Z" fill="#3b85e9" stroke="#29454d" stroke-width="3"/><path id="brush-ferrule" d="M-24 0H24V28H-24Z" fill="#bed3dc" stroke="#29454d" stroke-width="3"/><path id="brush-bristles" d="M-24 28H24L37 75H-37Z" fill="#e4bd74" stroke="#29454d" stroke-width="3"/><path id="brush-bristle-lines" d="M-10 36L-16 72M1 36V72M12 36L18 72" stroke="#c29c57" stroke-width="2"/></g>
+    <text id="discovery-clean-label" x="451" y="641" text-anchor="middle" font-family="monospace" font-size="12" fill="#668172">A STORY WAITING TO BE FOUND</text>
+  </g>
+  <g id="scene-inspection" data-scene="4" opacity="0" aria-hidden="true">
+    <ellipse id="inspection-plinth-shadow" cx="548" cy="668" rx="245" ry="38" fill="#a8c3b5" fill-opacity="0.2"/>
+    <ellipse id="inspection-plinth-top" cx="548" cy="637" rx="236" ry="59" fill="#dce8dd" stroke="#a0b9a9" stroke-width="2"/>
+    <g id="inspection-moon" data-world-layer="moon"><use id="inspection-eagle" href="#art-eagle" transform="translate(542 490) scale(1.18)"/><path id="eagle-condition-intact" d="M412 424L501 373 671 429 587 476Z" fill="#5bac7d" opacity=".5"/><path id="eagle-condition-wear" d="M459 475L500 487 500 525 459 514Z" fill="#d56f64" opacity=".8"/></g>
+    <g id="inspection-mars" data-world-layer="mars" display="none"><use id="inspection-spirit" href="#art-spirit" transform="translate(542 492) scale(1.07)"/><path id="spirit-condition-intact" d="M360 448L516 373 567 393 412 470Z" fill="#5bac7d" opacity=".7"/><path id="spirit-condition-wear" d="M573 448L610 430 652 447 614 467Z" fill="#d56f64" opacity=".8"/></g>
+    <g id="inspection-scan" fill="none" stroke="#72a58c" stroke-width="2"><path id="inspection-scan-top-left" d="M303 366V337H332"/><path id="inspection-scan-top-right" d="M752 366V337H723"/><path id="inspection-scan-bottom-left" d="M303 625V654H332"/><path id="inspection-scan-bottom-right" d="M752 625V654H723"/><path id="inspection-scan-beam" d="M303 385H752" stroke-dasharray="5 8"/></g>
+    <g id="inspection-markers" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+      <g id="inspection-marker-0" data-svg-part="0" role="button" tabindex="-1" aria-label="Match marker 1" transform="translate(355 609)"><circle id="inspection-marker-disc-0" r="22" fill="#fffdf3" stroke="#29454d" stroke-width="2"/><text id="inspection-marker-number-0" y="6" fill="#29454d">1</text></g>
+      <g id="inspection-marker-1" data-svg-part="1" role="button" tabindex="-1" aria-label="Match marker 2" transform="translate(542 570)"><circle id="inspection-marker-disc-1" r="22" fill="#fffdf3" stroke="#29454d" stroke-width="2"/><text id="inspection-marker-number-1" y="6" fill="#29454d">2</text></g>
+      <g id="inspection-marker-2" data-svg-part="2" role="button" tabindex="-1" aria-label="Match marker 3" transform="translate(534 420)"><circle id="inspection-marker-disc-2" r="22" fill="#fffdf3" stroke="#29454d" stroke-width="2"/><text id="inspection-marker-number-2" y="6" fill="#29454d">3</text></g>
+    </g>
+  </g>
+  <g id="scene-future" data-scene="5" opacity="0" aria-hidden="true">
+    <g id="future-site">
+      <ellipse id="future-site-base" cx="502" cy="603" rx="301" ry="100" fill="#d2d8c1"/>
+      <ellipse id="future-contact-shadow" cx="510" cy="613" rx="145" ry="20" fill="#516459" opacity=".13"/>
+      <!-- Independent leg groups: only this chapter is destructible. -->
+      <g id="future-eagle" data-world-layer="moon" transform="translate(505 501) scale(.88)" stroke="#233d47" stroke-width="3" stroke-linejoin="round">
+        <g id="future-eagle-leg-left">
+          <use id="future-eagle-rear-left" href="#eagle-leg-back-left" fill="none" stroke="#9b803f" stroke-width="9"/>
+          <use id="future-eagle-strut-left" href="#eagle-leg-front-left" fill="none" stroke="#d6b36e" stroke-width="9"/>
+          <use id="future-eagle-pad-left" href="#eagle-footpad-left" fill="#e6c77b"/>
+          <path id="future-eagle-break-left" data-future-break="left" opacity="0" d="M-78-21L-69-25-73-17-64-13M-79 14L-70 11-74 21-66 22" fill="none" stroke="#543d2d" stroke-width="3"/>
+        </g>
+        <g id="future-eagle-body-rig">
+          <use id="future-eagle-engine" href="#eagle-engine"/>
+          <use id="future-eagle-stage" href="#eagle-descent-stage"/>
+          <g id="future-eagle-sand-top" clip-path="url(#future-eagle-top-clip)" stroke="none">
+            <path id="future-eagle-sand-top-1" data-sand-band="0" opacity="0" fill="#d9ba83" d="M-122-77Q-47-98 30-58T129-37L129-25Q58-39 1-65T-122-66Z"/>
+            <path id="future-eagle-sand-top-2" data-sand-band="1" opacity="0" fill="#f1d9a1" d="M-126-55Q-55-77 10-40T128-14L128-4Q48-7-3-30T-126-45Z"/>
+            <path id="future-eagle-sand-top-3" data-sand-band="2" opacity="0" fill="#c6a16c" d="M-95-108Q-25-106 25-82T118-55L116-50Q52-53 15-72T-95-101Z"/>
+            <path id="future-eagle-sand-top-ridge" data-sand-band="1" opacity="0" d="M-103-52Q-42-63 8-37T105-14M-60-93Q-2-88 42-66" fill="none" stroke="#fff0c8" stroke-width="2"/>
+          </g>
+          <g id="future-eagle-sand-front" clip-path="url(#future-eagle-front-clip)" stroke="none">
+            <path id="future-eagle-sand-front-1" data-sand-band="0" opacity="0" fill="#b99159" d="M-120-39Q-70-30-22-9T49 5V16Q4 10-35-9T-120-28Z"/>
+            <path id="future-eagle-sand-front-2" data-sand-band="1" opacity="0" fill="#eccc8c" d="M-122-8Q-70-5-19 20T48 34V47Q5 38-34 20T-122 3Z"/>
+            <path id="future-eagle-sand-front-3" data-sand-band="2" opacity="0" fill="#ead5a7" d="M-122 16Q-48 16 48 51L48 65-122 36Z"/>
+          </g>
+          <g id="future-eagle-sand-side" clip-path="url(#future-eagle-side-clip)" stroke="none">
+            <path id="future-eagle-sand-side-1" data-sand-band="1" opacity="0" fill="#d8b87e" d="M29 1Q72-4 118-28V-16Q81 8 29 14Z"/>
+            <path id="future-eagle-sand-side-2" data-sand-band="2" opacity="0" fill="#e5cc98" d="M28 35Q75 29 119 5V22Q72 45 28 49Z"/>
+          </g>
+          <path id="future-eagle-joint-cracks" data-future-cracks="" opacity="0" d="M61-12L66-7 60-1 69 4M-76-24L-68-20-75-13" fill="none" stroke="#674734" stroke-width="3"/>
+        </g>
+        <g id="future-eagle-leg-right">
+          <use id="future-eagle-rear-right" href="#eagle-leg-back-right" fill="none" stroke="#9b803f" stroke-width="9"/>
+          <use id="future-eagle-strut-right" href="#eagle-leg-front-right" fill="none" stroke="#d6b36e" stroke-width="9"/>
+          <use id="future-eagle-pad-right" href="#eagle-footpad-right" fill="#e6c77b"/>
+          <path id="future-eagle-break-right" data-future-break="right" opacity="0" d="M58-9L67-12 62-4 72 0M58 26L67 23 63 31 71 34" fill="none" stroke="#543d2d" stroke-width="3"/>
+        </g>
+      </g>
+      <g id="future-spirit" data-world-layer="mars" display="none" transform="translate(505 518) scale(.79)" stroke="#233d47" stroke-width="3" stroke-linejoin="round">
+        <g id="future-spirit-body-rig">
+          <path id="future-spirit-left-suspension" d="M-92 22L-125 73-12 114" fill="none" stroke="#607076" stroke-width="10"/>
+          <g id="future-spirit-attached-wheels" fill="#30444b"><use href="#spirit-wheel-back-left"/><use href="#spirit-wheel-mid-left"/><use href="#spirit-wheel-front-left"/></g>
+          <use id="future-spirit-chassis" href="#spirit-body"/>
+          <g id="future-spirit-sand-body" clip-path="url(#future-spirit-body-clip)" stroke="none">
+            <path id="future-spirit-sand-body-1" data-sand-band="1" opacity="0" fill="#e6c79a" d="M-102-9Q-38-16 24 10T111 5V19Q58 37 13 24T-102 6Z"/>
+            <path id="future-spirit-sand-body-2" data-sand-band="2" opacity="0" fill="#b78d5d" d="M-104 15Q-28 9 24 34T106 24V40H-104Z"/>
+          </g>
+          <use id="future-spirit-arm" href="#spirit-arm"/>
+          <use id="future-spirit-array" href="#spirit-solar-array"/>
+          <g id="future-spirit-sand-panels" clip-path="url(#future-spirit-solar-clip)" stroke="none">
+            <path id="future-spirit-sand-panel-1" data-sand-band="0" opacity="0" fill="#c49a70" d="M-191-61Q-125-94-53-65T63-15 191-9L191 3Q118 18 55-4T-61-51-191-46Z"/>
+            <path id="future-spirit-sand-panel-2" data-sand-band="1" opacity="0" fill="#e2c394" d="M-170-26Q-110-50-42-21T68 21 184 12L184 26Q115 51 57 36T-51-7-170-15Z"/>
+            <path id="future-spirit-sand-panel-3" data-sand-band="2" opacity="0" fill="#d6af80" d="M-106-112Q-38-118 16-88T126-48 190-51V-37Q115-29 59-51T-29-87-106-98Z"/>
+            <path id="future-spirit-sand-panel-4" data-sand-band="3" opacity="0" fill="#eed8af" d="M-130-4Q-73-18-14 12T107 50L107 67Q23 61-27 34T-130 8Z"/>
+            <path id="future-spirit-sand-ridges" data-sand-band="2" opacity="0" d="M-153-42Q-96-65-37-40T66 3M-85-95Q-28-96 16-71T130-35M-81-4Q-29-1 15 23" fill="none" stroke="#f8e5c0" stroke-width="2"/>
+          </g>
+          <use id="future-spirit-mast" href="#spirit-camera-mast"/>
+          <path id="future-spirit-joint-cracks" data-future-cracks="" opacity="0" d="M86 12L98 17 90 24 104 30M39 28L45 35 37 42" fill="none" stroke="#724d38" stroke-width="3"/>
+        </g>
+        <g id="future-spirit-leg-back" fill="#30444b"><path id="future-spirit-strut-back" d="M80 11L108 43" fill="none" stroke="#607076" stroke-width="9"/><use href="#spirit-wheel-back-right"/><path id="future-spirit-tread-back" d="M100 23L113 21M100 35L116 33M100 47L116 45M100 59L112 57" fill="none" stroke="#6d8386" stroke-width="3"/></g>
+        <g id="future-spirit-leg-middle" fill="#30444b"><path id="future-spirit-strut-middle" d="M98 17L126 76" fill="none" stroke="#607076" stroke-width="10"/><use href="#spirit-wheel-mid-right"/><path id="future-spirit-tread-middle" d="M124 60L139 57M124 72L143 69M124 84L143 81M124 96L138 93" fill="none" stroke="#6d8386" stroke-width="3"/></g>
+        <g id="future-spirit-leg-front" fill="#30444b"><path id="future-spirit-strut-front" d="M86 63L18 119 57 112" fill="none" stroke="#607076" stroke-width="10"/><use href="#spirit-wheel-front-right"/><path id="future-spirit-tread-front" d="M48 92L62 90M48 104L66 102M48 116L66 114M48 128L61 126" fill="none" stroke="#6d8386" stroke-width="3"/></g>
+      </g>
+    </g>
+    <g id="future-protection" fill="none" stroke="#4c9775"><ellipse id="future-boundary" cx="502" cy="583" rx="292" ry="96" stroke-width="4" stroke-dasharray="9 8"/><path id="future-dome" d="M210 583C203 158 802 158 794 583" stroke-width="2" opacity=".5"/><path id="future-shield" d="M493 276L527 287V315Q527 338 493 354Q459 338 459 315V287Z" fill="#e2f0df" stroke-width="3"/><path id="future-shield-tick" d="M476 315L488 327 511 300" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text id="future-year" x="502" y="757" text-anchor="middle" font-family="Georgia,serif" font-size="60" fill="#658675">2026</text>
+  </g>
+  <g id="scene-legacy" data-scene="6" opacity="0" aria-hidden="true">
+    <g id="legacy-constellation" fill="none" stroke="#8da88a" stroke-width="1.5"><path id="legacy-stars-connection" d="M202 390L297 210 493 155 703 232 831 467 698 678 329 735 202 390"/><circle id="legacy-node-1" cx="202" cy="390" r="6" fill="#c9a952"/><circle id="legacy-node-2" cx="297" cy="210" r="6" fill="#c9a952"/><circle id="legacy-node-3" cx="493" cy="155" r="6" fill="#c9a952"/><circle id="legacy-node-4" cx="703" cy="232" r="6" fill="#c9a952"/><circle id="legacy-node-5" cx="831" cy="467" r="6" fill="#c9a952"/></g>
+    <g id="legacy-certificate" transform="translate(270 524) rotate(-5 230 120)"><rect id="legacy-card-shadow" x="10" y="12" width="460" height="234" rx="12" fill="#102e35" fill-opacity="0.1882"/><rect id="legacy-card-paper" width="460" height="234" rx="12" fill="#fffdf2" stroke="#c5b577" stroke-width="2"/><rect id="legacy-card-border" x="13" y="13" width="434" height="208" rx="5" fill="none" stroke="#d5ccb3"/><text id="legacy-card-kicker" x="230" y="51" text-anchor="middle" fill="#688777" font-family="monospace" font-size="11" letter-spacing="3">VANTALUMEN</text><text id="legacy-card-title" x="230" y="91" text-anchor="middle" fill="#233d47" font-family="Georgia,serif" font-size="25">A guardian of our cosmic story.</text><path id="legacy-card-line" d="M115 125H345" stroke="#b9c9b8"/><text id="legacy-card-name" x="230" y="159" text-anchor="middle" fill="#3b85e9" font-family="Georgia,serif" font-size="24">Your name among the stars</text><circle id="legacy-card-seal" cx="230" cy="200" r="11" fill="#e9c974"/></g>
+    <g id="legacy-confetti" fill="#d8b45e"><path id="legacy-sparkle-left" d="M173 536L181 558 203 566 181 574 173 596 165 574 143 566 165 558Z"/><path id="legacy-sparkle-right" d="M795 322L801 340 819 346 801 352 795 370 789 352 771 346 789 340Z"/><path id="legacy-ribbon-blue" d="M289 372Q266 391 287 413" fill="none" stroke="#3b85e9" stroke-width="6"/><path id="legacy-ribbon-green" d="M711 469Q740 473 727 502" fill="none" stroke="#48af7b" stroke-width="6"/></g>
+  </g>
+  <g id="rise-ground-shadow"><ellipse id="rise-shadow" cx="510" cy="684" rx="115" ry="18" fill="#5c786c" opacity=".15"/></g>
+  <!-- RISE_MASCOT -->
+  <g id="rise-speech" transform="translate(379 181)"><path id="rise-speech-tail" d="M38 52L52 69 65 52" fill="#fffdf4" stroke="#d5dccc" stroke-width="1.5"/><rect id="rise-speech-panel" width="240" height="55" rx="27" fill="#fffdf4" stroke="#d5dccc" stroke-width="1.5"/><text id="rise-speech-text" x="120" y="34" text-anchor="middle" fill="#29454d" font-family="Arial,sans-serif" font-size="17">Hey, explorer!</text></g>
+</svg>

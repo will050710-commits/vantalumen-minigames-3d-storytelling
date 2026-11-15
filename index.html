@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minigames, 3D web và Storytelling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:wght@400;500&family=Lilita+One&family=Russo+One&display=swap">
+<style>
+:root{
+  --bg:#131217; --ink:#fff; --ink-soft:rgba(255,255,255,.86);
+  color-scheme:dark; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:400 15px/1.45 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.wrap{height:100%;min-height:480px;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.4vw,18px);padding:clamp(10px,2vw,28px)}
+
+.panel{
+  container-type:inline-size;position:relative;isolation:isolate;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(16px,2vw,30px);border-radius:6px;color:inherit;text-decoration:none;
+  background:radial-gradient(120% 62% at 50% 34%,var(--c2),transparent 74%),linear-gradient(180deg,var(--c1),var(--c3));
+  transition:transform .25s ease,filter .25s ease;
+}
+.panel::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 46%)}
+.p1{--c1:#0b2556;--c2:#2f7bff;--c3:#06122b}
+.p2{--c1:#27105f;--c2:#7b3cf2;--c3:#120831}
+.p3{--c1:#6a1640;--c2:#ff4f86;--c3:#2b0b1d}
+
+.art{position:absolute;left:0;right:0;top:7%;margin-inline:auto;width:min(80cqw,400px,46vh);height:auto;filter:drop-shadow(0 16px 26px rgba(0,0,0,.35));transition:transform .3s ease}
+
+.t{margin:0;font-weight:400;font-size:calc(var(--fs)*var(--k,1));line-height:.95;text-transform:uppercase;white-space:nowrap;text-shadow:0 4px 20px rgba(0,0,0,.35)}
+.p1 .t{--fs:12.5cqw;font-family:"Russo One","Arial Black",Impact,sans-serif;font-style:italic}
+.p2 .t{--fs:25cqw;font-family:Anton,Impact,"Arial Narrow",sans-serif;letter-spacing:.01em}
+.p3 .t{--fs:11cqw;font-family:"Lilita One","Arial Rounded MT Bold","Arial Black",sans-serif}
+.cap{margin:.7em 0 0;max-width:32ch;color:var(--ink-soft)}
+
+.panel:hover,.panel:focus-visible{transform:translateY(-6px);filter:brightness(1.1)}
+.panel:hover .art,.panel:focus-visible .art{transform:scale(1.05) rotate(-2deg)}
+.panel:focus-visible{outline:3px solid #fff;outline-offset:4px}
+
+@media (max-width:760px){
+  html,body{height:auto}
+  .wrap{height:auto;min-height:0;grid-template-columns:1fr;grid-auto-rows:minmax(290px,auto)}
+  .panel{--k:.8;padding:18px}
+  .art{left:auto;right:5%;margin:0;top:10%;width:min(38cqw,170px)}
+}
+@media (prefers-reduced-motion:reduce){
+  .panel,.art{transition:none}
+  .panel:hover,.panel:focus-visible,.panel:hover .art,.panel:focus-visible .art{transform:none}
+}
+</style>
+</head>
+<body>
+<h1 class="sr">Trang chủ</h1>
+<main class="wrap">
+
+  <a class="panel p1" href="https://echoes-in-the-dust-liard.vercel.app/">
+    <svg class="art" viewBox="0 0 220 200" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="pad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6ebff"/><stop offset="1" stop-color="#5b9bff"/></linearGradient>
+        <radialGradient id="ball" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#eef6ff"/><stop offset="1" stop-color="#2b58c9"/></radialGradient>
+      </defs>
+      <circle cx="170" cy="152" r="32" fill="url(#ball)"/>
+      <circle cx="170" cy="152" r="32" fill="none" stroke="#bfe0ff" stroke-opacity=".5" stroke-width="2"/>
+      <rect x="26" y="28" width="12" height="12" fill="#9fd0ff" transform="rotate(14 32 34)"/>
+      <rect x="190" y="40" width="9" height="9" fill="#ffd23f" transform="rotate(-14 194 44)"/>
+      <rect x="12" y="92" width="7" height="7" fill="#9fd0ff" opacity=".7"/>
+      <path d="M60 60H160C182 60 196 84 202 116C206 138 198 154 184 154C172 154 166 146 158 134H62C54 146 48 154 36 154C22 154 14 138 18 116C24 84 38 60 60 60Z" fill="url(#pad)"/>
+      <path d="M58 90h8v8h8v8h-8v8h-8v-8h-8v-8h8z" fill="#0c2757"/>
+      <circle cx="158" cy="88" r="6.5" fill="#ffd23f"/>
+      <circle cx="170" cy="100" r="6.5" fill="#ff5a8a"/>
+      <circle cx="158" cy="112" r="6.5" fill="#4de0a0"/>
+      <circle cx="146" cy="100" r="6.5" fill="#0c2757"/>
+      <circle cx="90" cy="118" r="9" fill="#1a3f8f"/>
+      <circle cx="130" cy="118" r="9" fill="#1a3f8f"/>
+    </svg>
+    <h2 class="t">Minigames</h2>
+    <p class="cap">Những trò chơi nhỏ, chơi ngay trong vài phút.</p>
+  </a>
+
+  <a class="panel p2" href="https://vantalumen-atlas.vercel.app/">
+    <svg class="art" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+      <ellipse cx="100" cy="100" rx="90" ry="30" transform="rotate(-20 100 100)" fill="none" stroke="#d3bcff" stroke-width="2" stroke-dasharray="1 8" stroke-linecap="round"/>
+      <g stroke="#fff" stroke-opacity=".45" stroke-linejoin="round">
+        <path d="M100 36L154 67L100 98L46 67Z" fill="#e1d0ff"/>
+        <path d="M46 67L100 98V162L46 131Z" fill="#7d3df2"/>
+        <path d="M154 67V131L100 162V98Z" fill="#4a1fb5"/>
+      </g>
+      <circle cx="184" cy="69" r="9" fill="#ffd23f"/>
+      <circle cx="16" cy="131" r="5.5" fill="#7fd6ff"/>
+    </svg>
+    <h2 class="t">3D web</h2>
+    <p class="cap">Khám phá thế giới 3D ngay trên trình duyệt.</p>
+  </a>
+
+  <a class="panel p3" href="VantaLumen_SVG_Webflow_Package/index.html">
+    <h2 class="t">Storytelling</h2>
+    <p class="cap">Những câu chuyện được kể bằng hình ảnh.</p>
+  </a>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,757 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 870" width="1400" height="870" role="img" aria-labelledby="sheet-title"><title id="sheet-title">RISE · Seven expressive vector poses</title><rect width="1400" height="870" fill="#f6f3e9" /><text x="66" y="58" fill="#708776" font-size="13" font-family="Arial,sans-serif" text-anchor="start">VANTALUMEN  /  RISE</text><text x="65" y="110" fill="#233d47" font-size="38" font-family="Arial,sans-serif" text-anchor="start">A little face. Seven ways to feel.</text><text x="1335" y="58" fill="#708776" font-size="11" font-family="Arial,sans-serif" text-anchor="end">EDITABLE SVG · EMOTION STUDY</text><path id="sheet-rule" d="M65 138H1335" stroke="#cfd9c4" fill="none" /><ellipse id="happy-ground" cx="175" cy="387" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-happy" transform="translate(175 295) scale(.55)"><g id="happy-rise-position" transform="translate(0 0)">
+    <g id="happy-rise-scale" transform="scale(1)">
+      <g id="happy-rise-bounce" transform="translate(0 0)">
+        <g id="happy-rise-tilt" transform="rotate(-7)">
+          <g id="happy-rise-squash" transform="scale(1 1)">
+            <g id="happy-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="happy-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="happy-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="happy-rise-head">
+              <path id="happy-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="happy-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="happy-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="happy-rise-cheeks" fill="#c59fc7">
+              <ellipse id="happy-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="happy-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="happy-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="happy-rise-expression-happy" data-emotion="happy" opacity="1">
+                <g id="happy-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="happy-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="happy-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="happy-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="happy-rise-expression-curious" data-emotion="curious" opacity="0">
+                <g id="happy-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="happy-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="happy-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="happy-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="happy-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="happy-rise-expression-amazed" data-emotion="amazed" opacity="0">
+                <g id="happy-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="happy-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="happy-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="happy-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="happy-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="happy-rise-expression-focused" data-emotion="focused" opacity="0">
+                <g id="happy-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="happy-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="happy-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="happy-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="happy-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="happy-rise-expression-confident" data-emotion="confident" opacity="0">
+                <g id="happy-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="happy-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="happy-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="happy-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="happy-rise-expression-concerned" data-emotion="concerned" opacity="0">
+                <g id="happy-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="happy-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="happy-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="happy-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="happy-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="happy-rise-expression-grateful" data-emotion="grateful" opacity="0">
+                <g id="happy-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="happy-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="happy-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="happy-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="happy-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="happy-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="happy-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="happy-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="happy-rise-cap">
+              <path id="happy-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="happy-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="happy-rise-cap-continents" fill="#48af7b">
+                <path id="happy-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="happy-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="happy-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="happy-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="happy-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="happy-rise-cap-band">
+                <path id="happy-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="happy-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="happy-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="happy-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="happy-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="happy-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="175" y="426" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Happy</text><text x="175" y="449" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">01 / A warm welcome</text><ellipse id="curious-ground" cx="525" cy="387" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-curious" transform="translate(525 295) scale(.55)"><g id="curious-rise-position" transform="translate(0 0)">
+    <g id="curious-rise-scale" transform="scale(1)">
+      <g id="curious-rise-bounce" transform="translate(0 0)">
+        <g id="curious-rise-tilt" transform="rotate(11)">
+          <g id="curious-rise-squash" transform="scale(1 1)">
+            <g id="curious-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="curious-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="curious-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="curious-rise-head">
+              <path id="curious-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="curious-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="curious-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="curious-rise-cheeks" fill="#c59fc7">
+              <ellipse id="curious-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="curious-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="curious-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="curious-rise-expression-happy" data-emotion="happy" opacity="0">
+                <g id="curious-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="curious-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="curious-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="curious-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="curious-rise-expression-curious" data-emotion="curious" opacity="1">
+                <g id="curious-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="curious-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="curious-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="curious-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="curious-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="curious-rise-expression-amazed" data-emotion="amazed" opacity="0">
+                <g id="curious-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="curious-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="curious-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="curious-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="curious-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="curious-rise-expression-focused" data-emotion="focused" opacity="0">
+                <g id="curious-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="curious-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="curious-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="curious-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="curious-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="curious-rise-expression-confident" data-emotion="confident" opacity="0">
+                <g id="curious-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="curious-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="curious-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="curious-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="curious-rise-expression-concerned" data-emotion="concerned" opacity="0">
+                <g id="curious-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="curious-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="curious-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="curious-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="curious-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="curious-rise-expression-grateful" data-emotion="grateful" opacity="0">
+                <g id="curious-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="curious-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="curious-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="curious-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="curious-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="curious-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="curious-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="curious-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="curious-rise-cap">
+              <path id="curious-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="curious-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="curious-rise-cap-continents" fill="#48af7b">
+                <path id="curious-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="curious-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="curious-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="curious-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="curious-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="curious-rise-cap-band">
+                <path id="curious-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="curious-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="curious-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="curious-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="curious-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="curious-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="525" y="426" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Curious</text><text x="525" y="449" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">02 / Choosing a world</text><ellipse id="amazed-ground" cx="875" cy="387" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-amazed" transform="translate(875 295) scale(.55)"><g id="amazed-rise-position" transform="translate(0 0)">
+    <g id="amazed-rise-scale" transform="scale(1)">
+      <g id="amazed-rise-bounce" transform="translate(0 0)">
+        <g id="amazed-rise-tilt" transform="rotate(-9)">
+          <g id="amazed-rise-squash" transform="scale(1 1)">
+            <g id="amazed-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="amazed-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="amazed-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="amazed-rise-head">
+              <path id="amazed-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="amazed-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="amazed-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="amazed-rise-cheeks" fill="#c59fc7">
+              <ellipse id="amazed-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="amazed-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="amazed-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="amazed-rise-expression-happy" data-emotion="happy" opacity="0">
+                <g id="amazed-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="amazed-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="amazed-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="amazed-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="amazed-rise-expression-curious" data-emotion="curious" opacity="0">
+                <g id="amazed-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="amazed-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="amazed-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="amazed-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="amazed-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="amazed-rise-expression-amazed" data-emotion="amazed" opacity="1">
+                <g id="amazed-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="amazed-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="amazed-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="amazed-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="amazed-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="amazed-rise-expression-focused" data-emotion="focused" opacity="0">
+                <g id="amazed-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="amazed-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="amazed-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="amazed-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="amazed-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="amazed-rise-expression-confident" data-emotion="confident" opacity="0">
+                <g id="amazed-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="amazed-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="amazed-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="amazed-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="amazed-rise-expression-concerned" data-emotion="concerned" opacity="0">
+                <g id="amazed-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="amazed-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="amazed-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="amazed-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="amazed-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="amazed-rise-expression-grateful" data-emotion="grateful" opacity="0">
+                <g id="amazed-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="amazed-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="amazed-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="amazed-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="amazed-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="amazed-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="amazed-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="amazed-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="amazed-rise-cap">
+              <path id="amazed-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="amazed-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="amazed-rise-cap-continents" fill="#48af7b">
+                <path id="amazed-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="amazed-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="amazed-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="amazed-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="amazed-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="amazed-rise-cap-band">
+                <path id="amazed-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="amazed-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="amazed-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="amazed-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="amazed-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="amazed-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="875" y="426" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Amazed</text><text x="875" y="449" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">03 / The first landing</text><ellipse id="focused-ground" cx="1225" cy="387" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-focused" transform="translate(1225 295) scale(.55)"><g id="focused-rise-position" transform="translate(0 0)">
+    <g id="focused-rise-scale" transform="scale(1)">
+      <g id="focused-rise-bounce" transform="translate(0 0)">
+        <g id="focused-rise-tilt" transform="rotate(-12)">
+          <g id="focused-rise-squash" transform="scale(1 1)">
+            <g id="focused-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="focused-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="focused-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="focused-rise-head">
+              <path id="focused-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="focused-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="focused-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="focused-rise-cheeks" fill="#c59fc7">
+              <ellipse id="focused-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="focused-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="focused-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="focused-rise-expression-happy" data-emotion="happy" opacity="0">
+                <g id="focused-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="focused-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="focused-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="focused-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="focused-rise-expression-curious" data-emotion="curious" opacity="0">
+                <g id="focused-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="focused-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="focused-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="focused-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="focused-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="focused-rise-expression-amazed" data-emotion="amazed" opacity="0">
+                <g id="focused-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="focused-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="focused-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="focused-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="focused-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="focused-rise-expression-focused" data-emotion="focused" opacity="1">
+                <g id="focused-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="focused-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="focused-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="focused-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="focused-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="focused-rise-expression-confident" data-emotion="confident" opacity="0">
+                <g id="focused-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="focused-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="focused-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="focused-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="focused-rise-expression-concerned" data-emotion="concerned" opacity="0">
+                <g id="focused-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="focused-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="focused-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="focused-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="focused-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="focused-rise-expression-grateful" data-emotion="grateful" opacity="0">
+                <g id="focused-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="focused-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="focused-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="focused-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="focused-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="focused-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="focused-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="focused-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="focused-rise-cap">
+              <path id="focused-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="focused-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="focused-rise-cap-continents" fill="#48af7b">
+                <path id="focused-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="focused-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="focused-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="focused-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="focused-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="focused-rise-cap-band">
+                <path id="focused-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="focused-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="focused-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="focused-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="focused-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="focused-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="1225" y="426" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Focused</text><text x="1225" y="449" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">04 / A dusty discovery</text><ellipse id="confident-ground" cx="350" cy="744" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-confident" transform="translate(350 652) scale(.55)"><g id="confident-rise-position" transform="translate(0 0)">
+    <g id="confident-rise-scale" transform="scale(1)">
+      <g id="confident-rise-bounce" transform="translate(0 0)">
+        <g id="confident-rise-tilt" transform="rotate(6)">
+          <g id="confident-rise-squash" transform="scale(1 1)">
+            <g id="confident-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="confident-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="confident-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="confident-rise-head">
+              <path id="confident-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="confident-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="confident-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="confident-rise-cheeks" fill="#c59fc7">
+              <ellipse id="confident-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="confident-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="confident-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="confident-rise-expression-happy" data-emotion="happy" opacity="0">
+                <g id="confident-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="confident-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="confident-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="confident-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="confident-rise-expression-curious" data-emotion="curious" opacity="0">
+                <g id="confident-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="confident-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="confident-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="confident-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="confident-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="confident-rise-expression-amazed" data-emotion="amazed" opacity="0">
+                <g id="confident-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="confident-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="confident-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="confident-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="confident-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="confident-rise-expression-focused" data-emotion="focused" opacity="0">
+                <g id="confident-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="confident-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="confident-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="confident-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="confident-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="confident-rise-expression-confident" data-emotion="confident" opacity="1">
+                <g id="confident-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="confident-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="confident-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="confident-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="confident-rise-expression-concerned" data-emotion="concerned" opacity="0">
+                <g id="confident-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="confident-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="confident-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="confident-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="confident-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="confident-rise-expression-grateful" data-emotion="grateful" opacity="0">
+                <g id="confident-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="confident-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="confident-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="confident-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="confident-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="confident-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="confident-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="confident-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="confident-rise-cap">
+              <path id="confident-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="confident-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="confident-rise-cap-continents" fill="#48af7b">
+                <path id="confident-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="confident-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="confident-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="confident-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="confident-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="confident-rise-cap-band">
+                <path id="confident-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="confident-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="confident-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="confident-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="confident-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="confident-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="350" y="783" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Confident</text><text x="350" y="806" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">05 / A little knowledge</text><ellipse id="concerned-ground" cx="700" cy="744" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-concerned" transform="translate(700 652) scale(.55)"><g id="concerned-rise-position" transform="translate(0 0)">
+    <g id="concerned-rise-scale" transform="scale(1)">
+      <g id="concerned-rise-bounce" transform="translate(0 0)">
+        <g id="concerned-rise-tilt" transform="rotate(8)">
+          <g id="concerned-rise-squash" transform="scale(1 1)">
+            <g id="concerned-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="concerned-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="concerned-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="concerned-rise-head">
+              <path id="concerned-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="concerned-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="concerned-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="concerned-rise-cheeks" fill="#c59fc7">
+              <ellipse id="concerned-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="concerned-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="concerned-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="concerned-rise-expression-happy" data-emotion="happy" opacity="0">
+                <g id="concerned-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="concerned-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="concerned-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="concerned-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="concerned-rise-expression-curious" data-emotion="curious" opacity="0">
+                <g id="concerned-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="concerned-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="concerned-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="concerned-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="concerned-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="concerned-rise-expression-amazed" data-emotion="amazed" opacity="0">
+                <g id="concerned-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="concerned-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="concerned-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="concerned-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="concerned-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="concerned-rise-expression-focused" data-emotion="focused" opacity="0">
+                <g id="concerned-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="concerned-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="concerned-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="concerned-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="concerned-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="concerned-rise-expression-confident" data-emotion="confident" opacity="0">
+                <g id="concerned-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="concerned-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="concerned-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="concerned-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="concerned-rise-expression-concerned" data-emotion="concerned" opacity="1">
+                <g id="concerned-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="concerned-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="concerned-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="concerned-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="concerned-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="concerned-rise-expression-grateful" data-emotion="grateful" opacity="0">
+                <g id="concerned-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="concerned-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="concerned-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="concerned-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="concerned-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="concerned-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="concerned-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="concerned-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="concerned-rise-cap">
+              <path id="concerned-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="concerned-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="concerned-rise-cap-continents" fill="#48af7b">
+                <path id="concerned-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="concerned-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="concerned-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="concerned-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="concerned-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="concerned-rise-cap-band">
+                <path id="concerned-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="concerned-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="concerned-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="concerned-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="concerned-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="concerned-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="700" y="783" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Concerned</text><text x="700" y="806" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">06 / A fragile future</text><ellipse id="grateful-ground" cx="1050" cy="744" rx="64" ry="10" fill="#dbe3cf" /><g id="mood-grateful" transform="translate(1050 652) scale(.55)"><g id="grateful-rise-position" transform="translate(0 0)">
+    <g id="grateful-rise-scale" transform="scale(1)">
+      <g id="grateful-rise-bounce" transform="translate(0 0)">
+        <g id="grateful-rise-tilt" transform="rotate(-3)">
+          <g id="grateful-rise-squash" transform="scale(1 1)">
+            <g id="grateful-rise-side-discs" fill="#f6c846" stroke="#16323d" stroke-width="3.5">
+              <path id="grateful-rise-disc-left" d="M-122-10C-154-16-159 40-132 48L-116 29Z" />
+              <path id="grateful-rise-disc-right" d="M122-10C154-16 159 40 132 48L116 29Z" />
+            </g>
+            <g id="grateful-rise-head">
+              <path id="grateful-rise-face-base" d="M-135-52C-157 17-134 113-56 135C29 160 118 118 136 43C145 9 143-27 132-52C77-117-76-120-135-52Z" fill="#f3d7bc" stroke="#16323d" stroke-width="3.5" />
+              <path id="grateful-rise-face-shade" d="M101-62C151 30 100 123 21 141C93 143 137 94 141 28C143-5 137-34 132-52Z" fill="#e5b89a" />
+              <path id="grateful-rise-face-highlight" d="M-116-26C-127 8-122 44-113 56" fill="none" stroke="#fff0dc" stroke-width="9" stroke-linecap="round" />
+            </g>
+            <g id="grateful-rise-cheeks" fill="#c59fc7">
+              <ellipse id="grateful-rise-cheek-left" cx="-85" cy="45" rx="19" ry="15" />
+              <ellipse id="grateful-rise-cheek-right" cx="85" cy="45" rx="19" ry="15" />
+            </g>
+            <g id="grateful-rise-expressions" fill="#17262d" stroke-linecap="round" stroke-linejoin="round">
+              <g id="grateful-rise-expression-happy" data-emotion="happy" opacity="0">
+                <g id="grateful-rise-eyes-happy" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-happy" d="M-63 9C-63-19-35-25-33 4C-30 30-60 35-63 9Z" />
+                  <path id="grateful-rise-eye-right-happy" d="M33 7C33-21 61-24 63 4C66 30 36 34 33 7Z" />
+                  <path id="grateful-rise-eye-glints-happy" d="M-51-9L-49-4M46-9L48-4" stroke="#fffdf2" stroke-width="7" />
+                </g>
+                <path id="grateful-rise-mouth-happy" d="M-29 49Q0 79 30 49" fill="none" stroke="#17262d" stroke-width="5.5" />
+              </g>
+              <g id="grateful-rise-expression-curious" data-emotion="curious" opacity="0">
+                <g id="grateful-rise-eyes-curious" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-curious" d="M-61 8C-62-20-36-24-34 3C-32 29-58 34-61 8Z" />
+                  <path id="grateful-rise-eye-right-curious" d="M33 8C33-16 63-14 63 8C63 29 34 31 33 8Z" />
+                  <path id="grateful-rise-eye-glints-curious" d="M-44-7L-43-3M51-3L52 1" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="grateful-rise-brow-curious" d="M-66-29Q-49-43-30-32" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="grateful-rise-mouth-curious" d="M-14 58Q6 67 25 51" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="grateful-rise-expression-amazed" data-emotion="amazed" opacity="0">
+                <g id="grateful-rise-eyes-amazed" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-amazed" d="M-66 5C-66-28-29-29-29 5C-29 38-66 37-66 5Z" />
+                  <path id="grateful-rise-eye-right-amazed" d="M29 5C29-28 66-29 66 5C66 38 29 37 29 5Z" />
+                  <path id="grateful-rise-eye-glints-amazed" d="M-51-13L-48-6M44-13L47-6" stroke="#fffdf2" stroke-width="8" />
+                </g>
+                <path id="grateful-rise-mouth-amazed" d="M-12 59C-12 38 14 38 14 59C14 82-12 80-12 59Z" />
+                <path id="grateful-rise-brows-amazed" d="M-68-38Q-48-49-28-37M28-37Q48-49 68-38" fill="none" stroke="#17262d" stroke-width="4" />
+              </g>
+              <g id="grateful-rise-expression-focused" data-emotion="focused" opacity="0">
+                <g id="grateful-rise-eyes-focused" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-focused" d="M-62-2L-32 6C-34 33-61 31-62-2Z" />
+                  <path id="grateful-rise-eye-right-focused" d="M32 6L62-2C61 32 34 33 32 6Z" />
+                  <path id="grateful-rise-eye-glints-focused" d="M-46 10L-45 13M47 9L48 12" stroke="#fffdf2" stroke-width="5" />
+                </g>
+                <path id="grateful-rise-brows-focused" d="M-66-17L-28-7M28-7L66-17" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="grateful-rise-mouth-focused" d="M-18 58Q0 54 18 58" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="grateful-rise-expression-confident" data-emotion="confident" opacity="0">
+                <g id="grateful-rise-eyes-confident" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-confident" d="M-62 9C-62-18-34-21-33 5C-32 31-60 33-62 9Z" />
+                  <path id="grateful-rise-eye-right-confident" d="M34 6Q48-8 63 6" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="grateful-rise-eye-glint-confident" d="M-49-6L-47-2" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="grateful-rise-mouth-confident" d="M-29 46Q0 82 33 44Q2 60-29 46Z" />
+              </g>
+              <g id="grateful-rise-expression-concerned" data-emotion="concerned" opacity="0">
+                <g id="grateful-rise-eyes-concerned" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-concerned" d="M-61 12C-61-14-34-14-34 12C-34 36-61 36-61 12Z" />
+                  <path id="grateful-rise-eye-right-concerned" d="M34 12C34-14 61-14 61 12C61 36 34 36 34 12Z" />
+                  <path id="grateful-rise-eye-glints-concerned" d="M-50 0L-48 3M44 0L46 3" stroke="#fffdf2" stroke-width="6" />
+                </g>
+                <path id="grateful-rise-brows-concerned" d="M-66-16Q-42-17-30-30M30-30Q42-17 66-16" fill="none" stroke="#17262d" stroke-width="5" />
+                <path id="grateful-rise-mouth-concerned" d="M-23 65Q0 44 23 65" fill="none" stroke="#17262d" stroke-width="5" />
+              </g>
+              <g id="grateful-rise-expression-grateful" data-emotion="grateful" opacity="1">
+                <g id="grateful-rise-eyes-grateful" class="rise-eye-pair">
+                  <path id="grateful-rise-eye-left-grateful" d="M-65 10Q-48-13-31 10" fill="none" stroke="#17262d" stroke-width="6" />
+                  <path id="grateful-rise-eye-right-grateful" d="M31 10Q48-13 65 10" fill="none" stroke="#17262d" stroke-width="6" />
+                </g>
+                <path id="grateful-rise-mouth-grateful" d="M-30 44Q0 102 31 44Q0 59-30 44Z" />
+                <path id="grateful-rise-tongue-grateful" d="M-14 68Q0 59 14 68Q0 79-14 68Z" fill="#e79a97" />
+              </g>
+            </g>
+            <g id="grateful-rise-blink" opacity="0" stroke="#17262d" stroke-width="5.5" fill="none" stroke-linecap="round">
+              <path id="grateful-rise-blink-left" d="M-64 9Q-48 16-32 9" />
+              <path id="grateful-rise-blink-right" d="M32 9Q48 16 64 9" />
+            </g>
+            <g id="grateful-rise-cap">
+              <path id="grateful-rise-cap-ocean" d="M-148-60C-133-216 131-216 148-60L137-34Q0-110-137-34Z" fill="#3b85e9" stroke="#16323d" stroke-width="3.5" />
+              <path id="grateful-rise-cap-ocean-shade" d="M67-164C114-143 139-102 148-60L137-34Q110-51 82-58C91-95 91-132 67-164Z" fill="#2670d4" />
+              <g id="grateful-rise-cap-continents" fill="#48af7b">
+                <path id="grateful-rise-continent-americas" d="M-97-133L-69-158-45-166-42-152-57-138-47-127-54-108-38-101-38-86-52-76-61-96-74-103-72-120-89-120Z" />
+                <path id="grateful-rise-continent-europe-africa" d="M-10-173L16-175 28-163 15-153 24-139 41-133 44-116 28-102 17-94 6-115-7-121-19-138-9-150-19-160Z" />
+                <path id="grateful-rise-continent-asia" d="M35-166L66-159 85-149 93-133 111-119 119-96 105-91 97-109 80-111 64-128 44-127 38-143 23-153Z" />
+                <path id="grateful-rise-continent-islands" d="M85-88L102-83 107-67 90-62 81-73Z" />
+              </g>
+              <path id="grateful-rise-cap-highlight" d="M-109-119Q-82-157-47-165" fill="none" stroke="#8fc3ff" stroke-width="6" stroke-linecap="round" />
+              <g id="grateful-rise-cap-band">
+                <path id="grateful-rise-band-base" d="M-141-67Q0-144 141-67L137-39Q0-111-137-39Z" fill="#16323d" stroke="#16323d" stroke-width="3" />
+                <path id="grateful-rise-band-upper-trim" d="M-139-66Q0-140 139-66" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="grateful-rise-band-lower-trim" d="M-137-40Q0-110 137-40" fill="none" stroke="#f4cd62" stroke-width="4" />
+                <path id="grateful-rise-band-star-left" d="M-84-86L-80-79-72-80-77-73-74-65-82-68-89-63-89-72-96-77-87-79Z" fill="#f4cd62" />
+                <path id="grateful-rise-band-star-right" d="M84-86L87-79 96-77 89-72 89-63 82-68 74-65 77-73 72-80 80-79Z" fill="#f4cd62" />
+                <text id="grateful-rise-cap-name" x="0" y="-87" text-anchor="middle" fill="#f4cd62" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RISE</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g><text x="1050" y="783" fill="#233d47" font-size="19" font-family="Arial,sans-serif" text-anchor="middle">Grateful</text><text x="1050" y="806" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="middle">07 / A shared legacy</text><text x="65" y="843" fill="#7c9079" font-size="11" font-family="Arial,sans-serif" text-anchor="start">Globe cap · gold star band · lavender cheeks · named animation layers</text><text x="1335" y="843" fill="#7c9079" font-size="10" font-family="Arial,sans-serif" text-anchor="end">Original vector interpretation of the supplied GLB</text></svg>

@@ -1,0 +1,80 @@
+{
+  "checksPassed": 18,
+  "checks": [
+    {
+      "check": "App starts with the actual GSAP and ScrollTrigger libraries",
+      "status": "PASS"
+    },
+    {
+      "check": "ScrollTrigger drives the scrubbed story timeline",
+      "status": "PASS"
+    },
+    {
+      "check": "Every story SVG path/group has a unique named ID",
+      "status": "PASS"
+    },
+    {
+      "check": "Seven exact poses, expressions, layer visibility and scene states",
+      "status": "PASS"
+    },
+    {
+      "check": "Interpolated mascot bounds include bounce/entry movement inside the SVG viewBox",
+      "status": "PASS"
+    },
+    {
+      "check": "Future supports separate, both vehicles fall, sand follows body, backward scrubbing resets exactly, protection preserves structure",
+      "status": "PASS"
+    },
+    {
+      "check": "Future chapter holds solid without a ghost certificate underneath",
+      "status": "PASS"
+    },
+    {
+      "check": "Inactive SVG controls leave the keyboard tab order",
+      "status": "PASS"
+    },
+    {
+      "check": "Mascot responds to the hello action",
+      "status": "PASS"
+    },
+    {
+      "check": "Incomplete missions and certificates stay locked",
+      "status": "PASS"
+    },
+    {
+      "check": "moon: dust, briefing controls, part matching, timeline, emotional reassurance and passport",
+      "status": "PASS"
+    },
+    {
+      "check": "mars: dust, briefing controls, part matching, timeline, emotional reassurance and passport",
+      "status": "PASS"
+    },
+    {
+      "check": "Destination progress survives a return trip",
+      "status": "PASS"
+    },
+    {
+      "check": "Safe SVG certificate export, gated by both expeditions",
+      "status": "PASS"
+    },
+    {
+      "check": "Reduced motion stops bounce and avoids duplicate triggers",
+      "status": "PASS"
+    },
+    {
+      "check": "Cleanup preserves the host page’s ScrollTriggers",
+      "status": "PASS"
+    },
+    {
+      "check": "All three native Webflow blocks fit their character limits",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG-only runtime: no model, WebGL, canvas or raster image dependency",
+      "status": "PASS"
+    }
+  ],
+  "browserVisualQA": "NOT RUN — prior browser approval limit remains unresolved",
+  "vectorVisualQA": "Static SVG scenes rendered and reviewed separately",
+  "testEnvironment": "jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0"
+}
