@@ -34,7 +34,7 @@ body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:400 15px/1.
 .panel::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 46%)}
 .p1{--c3:#06122b;--panel-image:url("VantaLumen_Landing_Assets/minigames-rover.jpg")}
 .p2{--c3:#120831;--panel-image:url("VantaLumen_Landing_Assets/interactive-3d.jpg");background-position:center,center top;background-size:auto,90% auto}
-.p3{--c3:#2b0b1d;--panel-image:url("VantaLumen_Landing_Assets/storytelling-rise.jpg");background-position:center,center top;background-size:auto,auto 76%}
+.p3{--c3:#2b0b1d;--panel-image:url("VantaLumen_Landing_Assets/storytelling-rise.jpg");background-position:center,center;background-size:auto,cover}
 
 .t{margin:0;font-weight:400;font-size:calc(var(--fs)*var(--k,1));line-height:.95;text-transform:uppercase;white-space:nowrap;text-shadow:0 4px 20px rgba(0,0,0,.35)}
 .p1 .t{--fs:12.5cqw;font-family:"Russo One","Arial Black",Impact,sans-serif;font-style:italic}
@@ -49,7 +49,7 @@ body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:400 15px/1.
   html,body{height:auto}
   .wrap{height:auto;min-height:0;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(86vw,340px);grid-auto-rows:minmax(290px,auto);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory}
   .panel{--k:.8;padding:18px;scroll-snap-align:start}
-  .p3{background-position:center,center 45%;background-size:auto,cover}
+  .p3{background-position:center,center;background-size:auto,cover}
 }
 @media (prefers-reduced-motion:reduce){
   .panel{transition:none}
