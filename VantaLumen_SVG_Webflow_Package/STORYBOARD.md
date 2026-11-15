@@ -10,7 +10,7 @@ Source: `VANTALUMEN TEAM_Masterfile_Nov 2026.xlsx`, sheet **Story Line**. The na
 | Recover a story | B8:D9 | Focused RISE beside a dusty archive frame | Brush the SVG tiles, reveal the relic, open an original captioned 30-second briefing |
 | Read the machine | B10:D11 | Confident RISE, illustrated relic, numbered markers and green/red concept overlays | Match all three component names, learn their contribution, receive an encouraging wink |
 | Protect the future | B12:D12 | Concerned RISE watches the timeline; protection restores confidence | Explore 2026–2076, toggle a conceptual protection zone and record the expedition |
-| A shared legacy | B13:D15 | Grateful RISE above a certificate, stars and warm paper details on a dark circular backdrop | Revisit either world; complete both to personalize and download the certificate |
+| A shared legacy | B13:D15 | Grateful RISE above a certificate, stars and warm paper details on a dark circular backdrop | Revisit either world; complete both to personalize an A4 certificate and save it as PDF |
 
 ## Intentional adaptations for the requested SVG approach
 

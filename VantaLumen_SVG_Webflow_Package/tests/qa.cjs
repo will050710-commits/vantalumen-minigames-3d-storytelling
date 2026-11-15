@@ -71,7 +71,7 @@ async function run(){
  pass('Future chapter holds solid without a ghost certificate underneath');
  api.renderAt(1);assert.equal(q('[data-svg-world]').getAttribute('tabindex'),'0');api.renderAt(3);assert.equal(q('[data-svg-world]').getAttribute('tabindex'),'-1');pass('Inactive SVG controls leave the keyboard tab order');
  click('.vs-hello');assert.equal(api.getState().emotion,'grateful');pass('Mascot responds to the hello action');
- click('.vs-record');assert(!api.getState().moon.recorded);assert(q('.vs-download').disabled);pass('Incomplete missions and certificates stay locked');
+ click('.vs-record');assert(!api.getState().moon.recorded);assert(q('.vs-create-certificate').disabled);pass('Incomplete missions and certificates stay locked');
  async function finish(name){
   api.chooseWorld(name);api.renderAt(3);for(let i=0;i<20&&q('.vs-open-briefing').disabled;i++)click('.vs-brush');assert(!q('.vs-open-briefing').disabled);assert.equal(q('#discovery-dust').getAttribute('opacity'),'0');
   click('.vs-open-briefing');assert(q('.vs-briefing').open);click('.vs-brief-toggle');assert.equal(q('.vs-brief-toggle').textContent,'Play');click('.vs-close');assert(!q('.vs-briefing').open);
@@ -81,16 +81,21 @@ async function run(){
   q('#vs-protect').checked=true;q('#vs-protect').dispatchEvent(new w.Event('change'));await new Promise(r=>setTimeout(r,1250));assert(Number(q('[data-world-layer="'+name+'"] [data-sand-band]').getAttribute('opacity'))<unprotected);assert.equal(root.dataset.futurePhase,'intact');assert.equal(q('#future-protection').getAttribute('opacity'),'1');assert.equal(api.getState().emotion,'confident');
   click('.vs-record');assert(api.getState()[name].recorded);pass(`${name}: dust, briefing controls, part matching, timeline, emotional reassurance and passport`);
  }
- await finish('moon');assert(q('.vs-download').disabled);await finish('mars');assert(!q('.vs-download').disabled);
+ await finish('moon');assert(q('.vs-create-certificate').disabled);await finish('mars');assert(q('.vs-create-certificate').disabled);assert(q('.vs-certificate-status').textContent.includes('Add your name'));pass('Certificate stays locked until both expeditions are recorded and a name is entered');
  api.chooseWorld('moon');assert.equal(q('#vs-year').value,'2076');assert.equal(api.getState().moon.matches,3);pass('Destination progress survives a return trip');
- q('#vs-explorer-name').value='<script>alert(1)</script> & RISE';q('#vs-explorer-name').dispatchEvent(new w.Event('input'));assert.equal(q('#legacy-card-name').textContent,'<script>alert(1)</script> & RISE');click('.vs-download');await new Promise(r=>setTimeout(r,20));assert(download);assert(certificate.includes('&lt;script&gt;'));assert(!certificate.includes('<script>'));pass('Safe SVG certificate export, gated by both expeditions');
+ q('#vs-explorer-name').value='<script>alert(1)</script> & RISE';q('#vs-explorer-name').dispatchEvent(new w.Event('input'));assert.equal(q('#legacy-card-name').textContent,'<script>alert(1)</script> & RISE');assert(!q('.vs-create-certificate').disabled);
+ click('.vs-create-certificate');const certDialog=q('.vs-certificate-dialog'),certPreview=q('.vs-certificate-preview');assert(certDialog.open);assert(certPreview.querySelector('svg'));assert(certPreview.innerHTML.includes('&lt;script&gt;'));assert(!certPreview.innerHTML.includes('<script>'));assert(certPreview.innerHTML.includes('viewBox="0 0 1123 794"'));
+ let printed=0;w.print=()=>printed++;click('.vs-print-certificate');await new Promise(r=>setTimeout(r,140));assert.equal(printed,1);assert(d.body.classList.contains('vs-printing-certificate'));const printRoot=d.body.querySelector('.vs-certificate-print');assert(printRoot);assert(printRoot.innerHTML.includes('&lt;script&gt;'));assert(d.head.textContent.includes('@page{size:A4 landscape;margin:0}'));
+ w.dispatchEvent(new w.Event('afterprint'));assert(!d.body.classList.contains('vs-printing-certificate'));assert(!d.body.querySelector('.vs-certificate-print'));assert(!d.head.textContent.includes('@page{size:A4 landscape;margin:0}'));
+ click('.vs-download-certificate');await new Promise(r=>setTimeout(r,20));assert(download);assert(certificate.includes('&lt;script&gt;'));assert(!certificate.includes('<script>'));assert(certificate.includes('viewBox="0 0 1123 794"'));
+ click('.vs-certificate-close');assert(!certDialog.open);pass('A4 certificate preview, safe SVG export and isolated print-to-PDF sheet');
  const sentinel=w.ScrollTrigger.create({id:'host-page-trigger',trigger:d.body,start:'top top',end:'+=100'});
  api.setMotion(true);assert(api.getState().reduced);assert.equal(q('#rise-bounce').getAttribute('transform'),'translate(0 0.000)');assert.equal(w.ScrollTrigger.getAll().length,2);api.renderAt(5);assert.equal(q('#rise-squash').getAttribute('transform'),'scale(1 1)');api.setMotion(false);assert.equal(w.ScrollTrigger.getAll().length,2);pass('Reduced motion stops bounce and avoids duplicate triggers');
  api.destroy();assert.equal(w.ScrollTrigger.getAll().length,1);assert.equal(w.ScrollTrigger.getAll()[0],sentinel);sentinel.kill();pass('Cleanup preserves the host page’s ScrollTriggers');
  for(const file of ['01_HEAD.html','02_BODY_EMBED.html','03_FOOTER.html'])assert(read('webflow/'+file).length<50000);pass('All three native Webflow blocks fit their character limits');
  const runtime=read('assets/story.js');assert(!/THREE\.|GLTFLoader|\.glb["']|getContext\(/.test(runtime));assert(!read('VantaLumen_SVG_Preview.html').includes('<image '));pass('SVG-only runtime: no model, WebGL, canvas or raster image dependency');
  w.gsap.ticker.sleep();dom.window.close();
- const report={checksPassed:results.length,checks:results,browserVisualQA:'NOT RUN — prior browser approval limit remains unresolved',vectorVisualQA:'Static SVG scenes rendered and reviewed separately',testEnvironment:'jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0'};
+ const report={checksPassed:results.length,checks:results,browserVisualQA:'Certificate flow exercised in the in-app Chromium browser for RISE_Story.html and index.html; full responsive/touch pass remains a maintainer check',vectorVisualQA:'Certificate SVG rendered in Chrome at 1123 × 794 and reviewed',testEnvironment:'jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0'};
  fs.writeFileSync(path.join(BASE,'VALIDATION.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }
 run().catch(e=>{console.error(e);process.exit(1);});

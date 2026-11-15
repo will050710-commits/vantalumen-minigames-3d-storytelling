@@ -207,21 +207,91 @@
     }
     on($('#vs-year'),'input',e=>{state().year=Number(e.target.value);if(state().year>2026)state().timeline=true;txt('.vs-year-output',state().year);updateEnvironment(true);updateCompletion();});
     on($('#vs-protect'),'change',e=>{state().protected=e.target.checked;temporaryEmotion=null;updateEnvironment(true);if(state().protected)react('confident');});
+    const nameInput=$('#vs-explorer-name'),createCertificate=$('.vs-create-certificate'),certificateDialog=$('.vs-certificate-dialog'),certificatePreview=$('.vs-certificate-preview'),printButton=$('.vs-print-certificate');
+    let printRoot=null,printStyle=null,printTimer=null,printLaunch=null;
+    const xmlEscape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
+    const cleanName=()=>nameInput.value.replace(/\s+/g,' ').trim().slice(0,60);
+    function certificateSVG(name){
+      const safe=xmlEscape(name),date=new Date().toLocaleDateString('en-GB',{year:'numeric',month:'long',day:'numeric'}),dateSafe=xmlEscape(date);
+      let hash=0;for(const ch of name+date)hash=(hash*31+ch.codePointAt(0))>>>0;
+      const serial='VL-'+String(hash).padStart(6,'0').slice(-6);
+      const nameSize=Math.max(22,Math.min(56,Math.floor(1500/Math.max(1,name.length))));
+      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1123 794" width="1123" height="794" role="img" aria-label="VantaLumen Interplanetary Heritage Certificate">
+<title>VantaLumen Interplanetary Heritage Certificate for ${safe}</title>
+<rect width="1123" height="794" fill="#f6f3e9"/>
+<rect x="26" y="26" width="1071" height="742" rx="10" fill="none" stroke="#96af95" stroke-width="1.5"/>
+<rect x="38" y="38" width="1047" height="718" rx="6" fill="none" stroke="#c5b577" stroke-width="1" stroke-opacity=".72"/>
+<g fill="none" stroke="#b9c9b8" stroke-width="1"><path d="M26 86V26h60M1037 26h60v60M1097 708v60h-60M86 768H26v-60"/></g>
+<g fill="#d8b45e"><path d="M86 86l4 9 10 1-8 6 3 10-9-5-9 5 3-10-8-6 10-1zM1037 86l4 9 10 1-8 6 3 10-9-5-9 5 3-10-8-6 10-1zM86 708l4 9 10 1-8 6 3 10-9-5-9 5 3-10-8-6 10-1zM1037 708l4 9 10 1-8 6 3 10-9-5-9 5 3-10-8-6 10-1z"/></g>
+<text x="90" y="72" font-family="monospace" font-size="10" letter-spacing="2" fill="#7c8c72">NO. ${serial}</text>
+<text x="1033" y="72" text-anchor="end" font-family="monospace" font-size="10" letter-spacing="2" fill="#7c8c72">${dateSafe.toUpperCase()}</text>
+<circle cx="561.5" cy="126" r="46" fill="#e5eddb"/>
+<path d="M561.5 90l9 27 28 1-23 17 9 28-23-17-23 17 9-28-23-17 28-1z" fill="#d8b45e"/>
+<text x="561.5" y="203" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="6" fill="#73876c">VANTALUMEN</text>
+<text x="561.5" y="257" text-anchor="middle" font-family="Georgia,serif" font-size="42" fill="#233d47">Interplanetary Heritage Certificate</text>
+<text x="561.5" y="302" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="17" fill="#73876c">This certifies that</text>
+<text x="561.5" y="382" text-anchor="middle" font-family="Georgia,serif" font-size="${nameSize}" fill="#276ec4">${safe}</text>
+<path d="M311 408H812" stroke="#c5b577" stroke-width="1"/>
+<g text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#233d47"><text x="561.5" y="456">has explored the Moon and Mars with RISE,</text><text x="561.5" y="484">and now carries their stories as a guardian of our cosmic legacy.</text></g>
+<g text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="2" fill="#688777"><rect x="437" y="515" width="112" height="30" rx="15" fill="none" stroke="#a7ba9e" stroke-dasharray="3 3"/><text x="493" y="535">○ MOON</text><rect x="574" y="515" width="112" height="30" rx="15" fill="none" stroke="#a7ba9e" stroke-dasharray="3 3"/><text x="630" y="535">○ MARS</text></g>
+<line x1="565" y1="646" x2="835" y2="646" stroke="#b9c9b8"/>
+<text x="700" y="669" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing="2" fill="#688777">VANTALUMEN EDUCATION</text>
+<text x="700" y="690" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#73876c">A guardian of our cosmic story.</text>
+<circle cx="935" cy="633" r="56" fill="#e5eddb" stroke="#c5b577" stroke-width="1.5"/>
+<circle cx="935" cy="633" r="46" fill="none" stroke="#8ca78d" stroke-dasharray="2 3"/>
+<path d="M935 602l6 17 18 1-15 11 6 18-15-11-15 11 6-18-15-11 18-1z" fill="#d8b45e"/>
+<text x="935" y="657" text-anchor="middle" font-family="monospace" font-size="8" letter-spacing="2" fill="#688777">RISE · 2026</text>
+<text x="561.5" y="724" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing="1.5" fill="#7c8c72">${dateSafe} · TWO WORLDS. ONE SHARED LEGACY.</text>
+<text x="561.5" y="749" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#8b987e">Educational completion certificate issued by VantaLumen · Not a NASA-endorsed credential.</text>
+</svg>`;
+    }
+    function refreshCertificate(){
+      const name=cleanName();
+      txt('#legacy-card-name',name||'Your name among the stars');
+      attr('#legacy-card-name','font-size',Math.max(11,Math.min(24,Math.floor(700/Math.max(1,name.length)))));
+      createCertificate.disabled=!complete()||!name;
+      txt('.vs-certificate-status',!complete()?'Complete both worlds to unlock your certificate.':!name?'Add your name to create your certificate.':'Your A4 certificate is ready to preview and save as a PDF.');
+    }
     function updateCompletion(){
       const s=state(),todo=[];if(s.cleared.size<24)todo.push('uncover the relic');if(s.matches.size<3)todo.push('match '+(3-s.matches.size)+' more parts');if(!s.timeline)todo.push('move the timeline');
       txt('.vs-record-status',s.recorded?'This world is in your explorer’s passport.':todo.length?'Still to discover: '+todo.join(', ')+'.':'Ready to add this world to your passport.');
       txt('.vs-record',s.recorded?'World remembered ✓':'Add this world to my passport ✓');
       for(const name of ['moon','mars']){const badge=$('.vs-'+name+'-stamp');badge.textContent=(journey[name].recorded?'✓ ':'○ ')+name.toUpperCase();badge.dataset.complete=String(journey[name].recorded);}
-      $('.vs-download').disabled=!complete();txt('.vs-certificate-status',complete()?'Two worlds explored. One shared legacy.':'Complete both worlds to unlock your certificate.');
+      refreshCertificate();
     }
     on($('.vs-record'),'click',()=>{if(!required(state())){updateCompletion();react('curious');return;}state().recorded=true;updateCompletion();react('grateful');if(complete())go(6);});
-    const nameInput=$('#vs-explorer-name');on(nameInput,'input',()=>{const name=nameInput.value.trim();txt('#legacy-card-name',name||'Your name among the stars');attr('#legacy-card-name','font-size',Math.max(11,Math.min(24,Math.floor(700/Math.max(1,name.length)))));});
-    on($('.vs-download'),'click',()=>{
-      if(!complete())return;const name=nameInput.value.trim()||'Cosmic Explorer';
-      const escape=text=>text.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
-      const date=new Date().toLocaleDateString('en-GB',{year:'numeric',month:'long',day:'numeric'});
-      const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950" width="1400" height="950"><rect width="1400" height="950" fill="#f6f3e9"/><rect x="40" y="40" width="1320" height="870" rx="12" fill="none" stroke="#96af95" stroke-width="2"/><circle cx="700" cy="165" r="55" fill="#e5eddb"/><path d="M700 120L711 151 744 153 719 175 726 207 700 189 674 207 681 175 656 153 689 151Z" fill="#d8b45e"/><g text-anchor="middle" font-family="Georgia,serif" fill="#233d47"><text x="700" y="278" font-size="22" letter-spacing="6">VANTALUMEN</text><text x="700" y="377" font-size="52">Interplanetary Heritage Certificate</text><text x="700" y="459" font-size="23" fill="#73876c">For a guardian of our cosmic story</text><text x="700" y="560" font-size="${Math.max(25,Math.min(58,Math.floor(1600/name.length)))}" fill="#276ec4">${escape(name)}</text><text x="700" y="662" font-size="25">For exploring the Moon and Mars with RISE,</text><text x="700" y="705" font-size="25">and learning to care for what humanity leaves behind.</text><text x="700" y="798" font-size="20">${escape(date)} · Two worlds. One shared legacy.</text><text x="700" y="858" font-size="15" fill="#7c8c72">Educational completion certificate issued by VantaLumen</text></g></svg>`;
-      const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'})),a=document.createElement('a');a.href=url;a.download='VantaLumen_RISE_Certificate.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);react('grateful');
+    on(nameInput,'input',refreshCertificate);
+    on(createCertificate,'click',()=>{
+      if(!complete())return;
+      const name=cleanName();
+      if(!name){nameInput.focus();refreshCertificate();return;}
+      certificatePreview.innerHTML=certificateSVG(name);
+      certificatePreview.setAttribute('aria-label','Certificate preview');
+      certificateDialog.showModal();printButton.focus();react('grateful');
+    });
+    on($('.vs-certificate-close'),'click',()=>certificateDialog.close());
+    on(certificateDialog,'close',()=>createCertificate.focus());
+    on($('.vs-download-certificate'),'click',()=>{
+      const svg=certificateSVG(cleanName()||'Cosmic Explorer'),url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'})),a=document.createElement('a');
+      a.href=url;a.download='VantaLumen_RISE_Certificate.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);react('grateful');
+    });
+    function cleanupPrint(){
+      if(printTimer){clearTimeout(printTimer);printTimer=null;}
+      if(printLaunch){clearTimeout(printLaunch);printLaunch=null;}
+      document.body.classList.remove('vs-printing-certificate');
+      printRoot?.remove();printStyle?.remove();printRoot=printStyle=null;
+    }
+    on(window,'afterprint',cleanupPrint);
+    on(printButton,'click',()=>{
+      const name=cleanName()||'Cosmic Explorer';
+      cleanupPrint();
+      printRoot=document.createElement('div');printRoot.className='vs-certificate-print';printRoot.setAttribute('aria-hidden','true');printRoot.style.cssText='position:fixed;left:-300vw;top:0;width:1123px;height:794px;pointer-events:none;';
+      printRoot.innerHTML=certificateSVG(name);
+      printStyle=document.createElement('style');
+      printStyle.textContent='@page{size:A4 landscape;margin:0}@media print{body.vs-printing-certificate{overflow:visible!important;margin:0!important;background:#fff!important}body.vs-printing-certificate>*{display:none!important}body.vs-printing-certificate>.vs-certificate-print{display:block!important;position:static!important;left:auto!important;width:297mm!important;height:210mm!important}body.vs-printing-certificate>.vs-certificate-print svg{display:block;width:297mm;height:210mm}}';
+      document.head.appendChild(printStyle);document.body.appendChild(printRoot);document.body.classList.add('vs-printing-certificate');
+      printLaunch=setTimeout(()=>{printLaunch=null;if(typeof window.print==='function')window.print();},80);
+      printTimer=setTimeout(cleanupPrint,120000);
     });
     // Captioned 30-second briefing. Its clock is independent of scroll and can pause.
     const dialog=$('.vs-briefing');let briefingTime=0,briefingPlaying=false,briefingWorld='moon',lastTick=performance.now();
@@ -238,7 +308,7 @@
     root.dataset.reduced=String(reduced);$('.vs-motion').setAttribute('aria-pressed',String(reduced));if(reduced)$('.vs-motion').textContent='Motion paused ▷';
     chooseWorld('moon');measure();paintScene(0);
     dependencies().then(libs=>{if(!alive)return;gsap=libs.gsap;ScrollTrigger=libs.ScrollTrigger;buildAnimation();root.dataset.ready='true';txt('.vs-runtime-status','RISE is ready. Scroll to explore.');}).catch(error=>{if(!alive)return;root.dataset.ready='fallback';reduced=true;root.dataset.reduced='true';$('.vs-motion').disabled=true;$('.vs-motion').textContent='Still scenes';syncFallback();txt('.vs-runtime-status','Animation libraries unavailable. Still scenes and activities remain available.');console.warn('VantaLumen SVG:',error.message);});
-    function destroy(){futureTween?.kill();alive=false;abort.abort();clearInterval(briefClock);clearTimeout(resizeTimer);resizeObserver.disconnect();intersection.disconnect();master?.kill();mainTrigger?.kill();idle?.kill();blink?.kill();entryTween?.kill();reactionTween?.kill();expressionTweens.forEach(t=>t.kill());setBlink(false);if(dialog.open)dialog.close();delete root.vantaSVG;root.dataset.ready='false';}
+    function destroy(){futureTween?.kill();alive=false;abort.abort();clearInterval(briefClock);clearTimeout(resizeTimer);resizeObserver.disconnect();intersection.disconnect();master?.kill();mainTrigger?.kill();idle?.kill();blink?.kill();entryTween?.kill();reactionTween?.kill();expressionTweens.forEach(t=>t.kill());setBlink(false);cleanupPrint();if(dialog.open)dialog.close();if(certificateDialog.open)certificateDialog.close();delete root.vantaSVG;root.dataset.ready='false';}
     root.vantaSVG={
       destroy,
       getState:()=>({world:journey.world,chapter:active,emotion:currentMood,progress,reduced,ready:root.dataset.ready,moon:{cleared:journey.moon.cleared.size,matches:journey.moon.matches.size,recorded:journey.moon.recorded},mars:{cleared:journey.mars.cleared.size,matches:journey.mars.matches.size,recorded:journey.mars.recorded}}),
@@ -247,6 +317,7 @@
       // Instant inspection/export hook; normal slider changes use the GSAP playhead.
       renderFutureAt:(year,protectedSite=false)=>{const n=Number(year);if(!Number.isFinite(n))return;state().year=Math.round(clamp(n,2026,2076));state().protected=Boolean(protectedSite);$('#vs-year').value=String(state().year);$('#vs-protect').checked=state().protected;txt('.vs-year-output',state().year);updateEnvironment();refreshFace(false);},
       setEmotion:name=>{if(!SCENES.some(s=>s.emotion===name))return;temporaryEmotion=name;refreshFace(false);},
+      createCertificate:name=>certificateSVG(String(name??'').replace(/\s+/g,' ').trim().slice(0,60)||'Cosmic Explorer'),
       chooseWorld,
       setMotion,
       resume:()=>{temporaryEmotion=null;refreshFace();mainTrigger?.refresh();pauseLoops();}

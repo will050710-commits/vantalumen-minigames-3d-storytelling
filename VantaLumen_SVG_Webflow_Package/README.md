@@ -32,10 +32,12 @@ Use one instance per page; SVG IDs intentionally remain stable and human-readabl
 - Watch a captioned 30-second illustrated briefing with pause/replay. It has no audio or archival footage.
 - Match relic component labels to SVG markers and see why the components matter.
 - Scrub 2026–2076: supports fracture and separate, the vehicle loses balance and falls, and sand accumulates in tapered surface bands. Scrubbing backward restores the vehicle. The protection toggle preserves the structure and leaves only light sand.
-- Record both expeditions, add a name and download a completion certificate as SVG.
+- Record both expeditions, add a name and preview a print-ready A4 certificate. Save it as PDF from the print dialog or download the same artwork as SVG.
 - Pause motion; operating-system reduced-motion preferences are also respected.
 
 Progress is independent for each world and lasts for the current page session. Names stay in the browser. Reloading restarts the journey. The timeline and green/red condition patches are teaching illustrations, not measured damage or a scientific forecast. The certificate is issued by VantaLumen for completing this educational experience, not by NASA.
+
+The certificate button creates an A4 landscape (297 × 210 mm) preview in the page. **Save as PDF** opens the browser print dialog; choose **Save as PDF** (or **Microsoft Print to PDF**) to keep a vector PDF. A temporary print-only sheet is appended to the page for the print job and removed afterwards, so no server, upload or external PDF library is involved. The optional **Download SVG** keeps the editable artwork.
 
 ## RISE’s seven expressions
 
@@ -83,7 +85,7 @@ To serve the package locally, run `python -m http.server 8765` in this directory
 - ScrollTrigger instances and tweens are individually owned and disposed. No `killAll()` or global timeline reset is used, so other Webflow animations can coexist.
 - There is no WebGL, canvas, Three.js, model-viewer, Spline, embedded GLB, raster mascot or model download.
 
-Maintainer hooks are exposed on `document.getElementById('vanta-svg-story').vantaSVG`: `getState()`, `renderAt(0..6)`, `renderFutureAt(year, protectedSite=false)`, `setEmotion(name)`, `chooseWorld('moon'|'mars')`, `setMotion(true|false)`, `resume()`, and `destroy()`. These support inspection; they are not controls shown to visitors.
+Maintainer hooks are exposed on `document.getElementById('vanta-svg-story').vantaSVG`: `getState()`, `renderAt(0..6)`, `renderFutureAt(year, protectedSite=false)`, `setEmotion(name)`, `createCertificate(name)`, `chooseWorld('moon'|'mars')`, `setMotion(true|false)`, `resume()`, and `destroy()`. `createCertificate()` returns the A4 certificate SVG string for inspection without opening the dialog. These support inspection; they are not controls shown to visitors.
 
 ## Future chapter choreography (v1.1)
 
@@ -103,7 +105,7 @@ Tune the thresholds and angles in `paintFuture()` and the input smoothing in `up
 
 ## Validation status
 
-The editable SVG mascot, seven scene states, and both future rigs at 2026, 2031, 2040, 2055, 2076 and protected 2076 were rendered with Inkscape and reviewed. Offline checks run the **actual GSAP and ScrollTrigger builds** in jsdom and verify timeline wiring, poses, expressions, unique IDs, activity flow, certificate escaping, reduced motion, cleanup and Webflow block sizes.
+The editable SVG mascot, seven scene states, and both future rigs at 2026, 2031, 2040, 2055, 2076 and protected 2076 were rendered with Inkscape and reviewed. Offline checks run the **actual GSAP and ScrollTrigger builds** in jsdom and verify timeline wiring, poses, expressions, unique IDs, activity flow, A4 certificate preview, print-sheet isolation, escaping, reduced motion, cleanup and Webflow block sizes.
 
 Full browser layout, touch behavior and published-Webflow visual testing remain unverified. The earlier browser request was rejected by automatic approval review because of the session’s usage limit. Static vector rendering and DOM checks do not replace a real browser pass; check the staging page before production publication.
 

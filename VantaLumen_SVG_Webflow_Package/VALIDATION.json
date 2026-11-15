@@ -1,5 +1,5 @@
 {
-  "checksPassed": 18,
+  "checksPassed": 19,
   "checks": [
     {
       "check": "App starts with the actual GSAP and ScrollTrigger libraries",
@@ -50,11 +50,15 @@
       "status": "PASS"
     },
     {
+      "check": "Certificate stays locked until both expeditions are recorded and a name is entered",
+      "status": "PASS"
+    },
+    {
       "check": "Destination progress survives a return trip",
       "status": "PASS"
     },
     {
-      "check": "Safe SVG certificate export, gated by both expeditions",
+      "check": "A4 certificate preview, safe SVG export and isolated print-to-PDF sheet",
       "status": "PASS"
     },
     {
@@ -74,7 +78,7 @@
       "status": "PASS"
     }
   ],
-  "browserVisualQA": "NOT RUN — prior browser approval limit remains unresolved",
-  "vectorVisualQA": "Static SVG scenes rendered and reviewed separately",
+  "browserVisualQA": "Certificate flow exercised in the in-app Chromium browser for RISE_Story.html and index.html; full responsive/touch pass remains a maintainer check",
+  "vectorVisualQA": "Certificate SVG rendered in Chrome at 1123 × 794 and reviewed",
   "testEnvironment": "jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0"
 }
