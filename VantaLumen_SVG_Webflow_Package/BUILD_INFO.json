@@ -1,10 +1,10 @@
 {
   "blocks": {
-    "01_HEAD.html": 18642,
-    "02_BODY_EMBED.html": 45726,
-    "03_FOOTER.html": 36261
+    "01_HEAD.html": 19108,
+    "02_BODY_EMBED.html": 45758,
+    "03_FOOTER.html": 37692
   },
-  "preview_bytes": 217923,
+  "preview_bytes": 219852,
   "engine": "GSAP 3.13.0 + ScrollTrigger 3.13.0",
   "requires_glb_at_runtime": false
 }

@@ -25,6 +25,8 @@ async function run(){
  d.dispatchEvent(new w.Event('DOMContentLoaded'));await new Promise(r=>setTimeout(r,80));
  const root=d.getElementById('vanta-svg-story'),api=root.vantaSVG,q=s=>root.querySelector(s),click=s=>q(s).click();
  assert(api,'App mounted');assert.equal(root.dataset.ready,'true',errors.join('\n'));assert(w.gsap&&w.ScrollTrigger);pass('App starts with the actual GSAP and ScrollTrigger libraries');
+ assert(q('.vs-certificate-dialog').hidden);assert(!q('.vs-certificate-dialog').open);assert(q('.vs-certificate').inert);assert(q('.vs-create-certificate').disabled);
+ pass('Certificate form and preview start hidden and unavailable outside the finale');
  const triggers=w.ScrollTrigger.getAll();assert.equal(triggers.length,1);assert.equal(triggers[0].vars.scrub,.65);triggers[0].animation.progress(.5);assert.equal(api.getState().chapter,3);pass('ScrollTrigger drives the scrubbed story timeline');
  const idList=Array.from(root.querySelectorAll('[id]'),el=>el.id);assert.equal(idList.length,new Set(idList).size);assert.equal(root.querySelectorAll('#vl-svg-stage path:not([id])').length,0);assert.equal(root.querySelectorAll('#vl-svg-stage g:not([id])').length,0);pass('Every story SVG path/group has a unique named ID');
  fs.mkdirSync(path.join(BASE,'.qa-scenes'),{recursive:true});
@@ -88,14 +90,20 @@ async function run(){
  let printed=0;w.print=()=>printed++;click('.vs-print-certificate');await new Promise(r=>setTimeout(r,140));assert.equal(printed,1);assert(d.body.classList.contains('vs-printing-certificate'));const printRoot=d.body.querySelector('.vs-certificate-print');assert(printRoot);assert(printRoot.innerHTML.includes('&lt;script&gt;'));assert(d.head.textContent.includes('@page{size:A4 landscape;margin:0}'));
  w.dispatchEvent(new w.Event('afterprint'));assert(!d.body.classList.contains('vs-printing-certificate'));assert(!d.body.querySelector('.vs-certificate-print'));assert(!d.head.textContent.includes('@page{size:A4 landscape;margin:0}'));
  click('.vs-download-certificate');await new Promise(r=>setTimeout(r,20));assert(download);assert(certificate.includes('&lt;script&gt;'));assert(!certificate.includes('<script>'));assert(certificate.includes('viewBox="0 0 1123 794"'));
- click('.vs-certificate-close');assert(!certDialog.open);pass('A4 certificate preview, safe SVG export and isolated print-to-PDF sheet');
+ click('.vs-certificate-close');assert(!certDialog.open);assert(certDialog.hidden);assert(!certPreview.firstChild);pass('A4 certificate preview, safe SVG export and isolated print-to-PDF sheet');
+ click('.vs-create-certificate');assert(certDialog.open);click('.vs-print-certificate');
+ w.scrollTo(0,0);w.dispatchEvent(new w.Event('scroll'));assert(!certDialog.open);assert(certDialog.hidden);assert(q('.vs-certificate').inert);assert(!certPreview.firstChild);assert(!d.body.querySelector('.vs-certificate-print'));
+ q('.vs-create-certificate').dispatchEvent(new w.Event('click'));assert(!certDialog.open);
+ await new Promise(r=>setTimeout(r,140));assert.equal(printed,1,'Leaving the finale cancels a pending print');
+ q('.vs-finale').scrollIntoView();assert(!q('.vs-certificate').inert);assert(!q('.vs-create-certificate').disabled);assert(!certDialog.open);assert(q('#vs-explorer-name').value.includes('RISE'));
+ pass('Leaving the finale hides the certificate, cancels pending print, blocks reopening and preserves the name on return');
  const sentinel=w.ScrollTrigger.create({id:'host-page-trigger',trigger:d.body,start:'top top',end:'+=100'});
  api.setMotion(true);assert(api.getState().reduced);assert.equal(q('#rise-bounce').getAttribute('transform'),'translate(0 0.000)');assert.equal(w.ScrollTrigger.getAll().length,2);api.renderAt(5);assert.equal(q('#rise-squash').getAttribute('transform'),'scale(1 1)');api.setMotion(false);assert.equal(w.ScrollTrigger.getAll().length,2);pass('Reduced motion stops bounce and avoids duplicate triggers');
  api.destroy();assert.equal(w.ScrollTrigger.getAll().length,1);assert.equal(w.ScrollTrigger.getAll()[0],sentinel);sentinel.kill();pass('Cleanup preserves the host page’s ScrollTriggers');
  for(const file of ['01_HEAD.html','02_BODY_EMBED.html','03_FOOTER.html'])assert(read('webflow/'+file).length<50000);pass('All three native Webflow blocks fit their character limits');
  const runtime=read('assets/story.js');assert(!/THREE\.|GLTFLoader|\.glb["']|getContext\(/.test(runtime));assert(!read('VantaLumen_SVG_Preview.html').includes('<image '));pass('SVG-only runtime: no model, WebGL, canvas or raster image dependency');
  w.gsap.ticker.sleep();dom.window.close();
- const report={checksPassed:results.length,checks:results,browserVisualQA:'Certificate flow exercised in the in-app Chromium browser for RISE_Story.html and index.html; full responsive/touch pass remains a maintainer check',vectorVisualQA:'Certificate SVG rendered in Chrome at 1123 × 794 and reviewed',testEnvironment:'jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0'};
+ const report={checksPassed:results.length,checks:results,browserVisualQA:'Run python tests/certificate_browser.py for desktop/mobile certificate checks across both stories, offline preview and local Webflow blocks; results in .qa-scenes/certificate-browser-results.json. Published Webflow and touch gestures are not covered.',vectorVisualQA:'Certificate SVG rendered in Chrome at 1123 × 794 and reviewed',testEnvironment:'jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0'};
  fs.writeFileSync(path.join(BASE,'VALIDATION.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }
 run().catch(e=>{console.error(e);process.exit(1);});

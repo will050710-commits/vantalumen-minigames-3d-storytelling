@@ -39,6 +39,8 @@ Progress is independent for each world and lasts for the current page session. N
 
 The certificate button creates an A4 landscape (297 × 210 mm) preview in the page. **Save as PDF** opens the browser print dialog; choose **Save as PDF** (or **Microsoft Print to PDF**) to keep a vector PDF. A temporary print-only sheet is appended to the page for the print job and removed afterwards, so no server, upload or external PDF library is involved. The optional **Download SVG** keeps the editable artwork.
 
+The name form becomes visible and keyboard-accessible only when the finale enters the viewport. The preview starts hidden, opens only after both worlds are recorded and a name is entered, and closes when the finale leaves the viewport. Closing it clears its artwork and any temporary print sheet; returning to the finale preserves the name without reopening the preview. This behavior is shared by `RISE_Story.html`, the generated preview, and the Webflow blocks.
+
 ## RISE’s seven expressions
 
 | Chapter | Expression | Placement and motion |
@@ -107,7 +109,7 @@ Tune the thresholds and angles in `paintFuture()` and the input smoothing in `up
 
 The editable SVG mascot, seven scene states, and both future rigs at 2026, 2031, 2040, 2055, 2076 and protected 2076 were rendered with Inkscape and reviewed. Offline checks run the **actual GSAP and ScrollTrigger builds** in jsdom and verify timeline wiring, poses, expressions, unique IDs, activity flow, A4 certificate preview, print-sheet isolation, escaping, reduced motion, cleanup and Webflow block sizes.
 
-Full browser layout, touch behavior and published-Webflow visual testing remain unverified. The earlier browser request was rejected by automatic approval review because of the session’s usage limit. Static vector rendering and DOM checks do not replace a real browser pass; check the staging page before production publication.
+Certificate visibility and interaction checks run in local Chrome at desktop (1440 × 900) and mobile (390 × 844) viewport sizes for `RISE_Story.html`, `index.html`, the offline preview, and the three Webflow blocks combined locally. They cover initial rendering with JavaScript disabled, earlier chapters, completion and name requirements, opening, Escape/close, print-sheet cleanup, SVG download, leaving/returning to the finale, and reloading. Run `python tests/certificate_browser.py` with Python Playwright and Chrome installed; results and certificate screenshots are saved in `.qa-scenes/`. Published-Webflow layout, touch gestures, and the optional external 3D assets are outside these certificate checks.
 
 ## Sources and notices
 

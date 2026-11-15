@@ -98,7 +98,7 @@
       attr('#origin-flight-trail','stroke-dashoffset',reduced?0:-progress*.07);
       $('.vs-progress span').style.width=(progress/6*100)+'%';applyBounce();
     }
-    function measure(){const top=root.getBoundingClientRect().top;anchors=sectionNodes.map(s=>s.getBoundingClientRect().top-top);}
+    function measure(){const top=root.getBoundingClientRect().top;anchors=sectionNodes.map(s=>s.getBoundingClientRect().top-top);refreshCertificateVisibility();}
     function fromRatio(ratio){const y=ratio*(anchors[6]||1);let i=0;while(i<5&&y>anchors[i+1])i++;return clamp(i+(y-anchors[i])/Math.max(1,anchors[i+1]-anchors[i]),0,6);}
     function syncFallback(){if(gsap||!alive)return;measure();paintScene(fromRatio(clamp(-root.getBoundingClientRect().top/Math.max(1,anchors[6]))));}
     function buildAnimation(){
@@ -209,6 +209,26 @@
     on($('#vs-year'),'input',e=>{state().year=Number(e.target.value);if(state().year>2026)state().timeline=true;txt('.vs-year-output',state().year);updateEnvironment(true);updateCompletion();});
     on($('#vs-protect'),'change',e=>{state().protected=e.target.checked;temporaryEmotion=null;updateEnvironment(true);if(state().protected)react('confident');});
     const nameInput=$('#vs-explorer-name'),createCertificate=$('.vs-create-certificate'),certificateDialog=$('.vs-certificate-dialog'),certificatePreview=$('.vs-certificate-preview'),printButton=$('.vs-print-certificate');
+    const certificateForm=$('.vs-certificate'),certificateSection=certificateForm.closest('.vs-chapter');
+    let certificateVisible=false;
+    function refreshCertificateVisibility(){
+      const bounds=certificateSection.getBoundingClientRect();
+      // Scroll positions round to pixels; ignore a fractional sliver at chapter boundaries.
+      certificateVisible=bounds.top<window.innerHeight-1&&bounds.bottom>1;
+      root.dataset.certificateActive=String(certificateVisible);
+      certificateForm.inert=!certificateVisible;
+      certificateForm.setAttribute('aria-hidden',String(!certificateVisible));
+      createCertificate.disabled=!certificateVisible||!complete()||!cleanName();
+      if(!certificateVisible&&certificateDialog.open)closeCertificate();
+      return certificateVisible;
+    }
+    function closeCertificate(){
+      certificateDialog.hidden=true;
+      if(certificateDialog.open)certificateDialog.close();
+      certificatePreview.replaceChildren();cleanupPrint();
+    }
+    on(window,'scroll',refreshCertificateVisibility,{passive:true});
+    on(window,'resize',refreshCertificateVisibility);
     let printRoot=null,printStyle=null,printTimer=null,printLaunch=null;
     const xmlEscape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
     const cleanName=()=>nameInput.value.replace(/\s+/g,' ').trim().slice(0,60);
@@ -250,7 +270,7 @@
       const name=cleanName();
       txt('#legacy-card-name',name||'Your name among the stars');
       attr('#legacy-card-name','font-size',Math.max(11,Math.min(24,Math.floor(700/Math.max(1,name.length)))));
-      createCertificate.disabled=!complete()||!name;
+      refreshCertificateVisibility();
       txt('.vs-certificate-status',!complete()?'Complete both worlds to unlock your certificate.':!name?'Add your name to create your certificate.':'Your A4 certificate is ready to preview and save as a PDF.');
     }
     function updateCompletion(){
@@ -263,16 +283,22 @@
     on($('.vs-record'),'click',()=>{if(!required(state())){updateCompletion();react('curious');return;}state().recorded=true;updateCompletion();react('grateful');if(complete())go(6);});
     on(nameInput,'input',refreshCertificate);
     on(createCertificate,'click',()=>{
-      if(!complete())return;
+      if(!refreshCertificateVisibility()||!complete())return;
       const name=cleanName();
       if(!name){nameInput.focus();refreshCertificate();return;}
       certificatePreview.innerHTML=certificateSVG(name);
       certificatePreview.setAttribute('aria-label','Certificate preview');
+      certificateDialog.hidden=false;
       certificateDialog.showModal();printButton.focus();react('grateful');
     });
-    on($('.vs-certificate-close'),'click',()=>certificateDialog.close());
-    on(certificateDialog,'close',()=>createCertificate.focus());
+    on($('.vs-certificate-close'),'click',closeCertificate);
+    on(certificateDialog,'close',()=>{
+      if(certificateDialog.open)return;
+      closeCertificate();
+      if(certificateVisible)createCertificate.focus({preventScroll:true});
+    });
     on($('.vs-download-certificate'),'click',()=>{
+      if(!certificateDialog.open||!refreshCertificateVisibility())return;
       const svg=certificateSVG(cleanName()||'Cosmic Explorer'),url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'})),a=document.createElement('a');
       a.href=url;a.download='VantaLumen_RISE_Certificate.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);react('grateful');
     });
@@ -284,6 +310,7 @@
     }
     on(window,'afterprint',cleanupPrint);
     on(printButton,'click',()=>{
+      if(!certificateDialog.open||!refreshCertificateVisibility())return;
       const name=cleanName()||'Cosmic Explorer';
       cleanupPrint();
       printRoot=document.createElement('div');printRoot.className='vs-certificate-print';printRoot.setAttribute('aria-hidden','true');printRoot.style.cssText='position:fixed;left:-300vw;top:0;width:1123px;height:794px;pointer-events:none;';
@@ -309,7 +336,7 @@
     root.dataset.reduced=String(reduced);$('.vs-motion').setAttribute('aria-pressed',String(reduced));if(reduced)$('.vs-motion').textContent='Motion paused ▷';
     chooseWorld('moon');measure();paintScene(0);
     dependencies().then(libs=>{if(!alive)return;gsap=libs.gsap;ScrollTrigger=libs.ScrollTrigger;buildAnimation();root.dataset.ready='true';txt('.vs-runtime-status','RISE is ready. Scroll to explore.');}).catch(error=>{if(!alive)return;root.dataset.ready='fallback';reduced=true;root.dataset.reduced='true';$('.vs-motion').disabled=true;$('.vs-motion').textContent='Still scenes';syncFallback();txt('.vs-runtime-status','Animation libraries unavailable. Still scenes and activities remain available.');console.warn('VantaLumen SVG:',error.message);});
-    function destroy(){futureTween?.kill();alive=false;abort.abort();clearInterval(briefClock);clearTimeout(resizeTimer);resizeObserver.disconnect();intersection.disconnect();master?.kill();mainTrigger?.kill();idle?.kill();blink?.kill();entryTween?.kill();reactionTween?.kill();expressionTweens.forEach(t=>t.kill());setBlink(false);cleanupPrint();if(dialog.open)dialog.close();if(certificateDialog.open)certificateDialog.close();delete root.vantaSVG;root.dataset.ready='false';}
+    function destroy(){futureTween?.kill();alive=false;abort.abort();clearInterval(briefClock);clearTimeout(resizeTimer);resizeObserver.disconnect();intersection.disconnect();master?.kill();mainTrigger?.kill();idle?.kill();blink?.kill();entryTween?.kill();reactionTween?.kill();expressionTweens.forEach(t=>t.kill());setBlink(false);cleanupPrint();if(dialog.open)dialog.close();closeCertificate();delete root.vantaSVG;root.dataset.ready='false';}
     root.vantaSVG={
       destroy,
       getState:()=>({world:journey.world,chapter:active,emotion:currentMood,progress,reduced,ready:root.dataset.ready,moon:{cleared:journey.moon.cleared.size,matches:journey.moon.matches.size,recorded:journey.moon.recorded},mars:{cleared:journey.mars.cleared.size,matches:journey.mars.matches.size,recorded:journey.mars.recorded}}),

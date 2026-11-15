@@ -1,8 +1,12 @@
 {
-  "checksPassed": 19,
+  "checksPassed": 21,
   "checks": [
     {
       "check": "App starts with the actual GSAP and ScrollTrigger libraries",
+      "status": "PASS"
+    },
+    {
+      "check": "Certificate form and preview start hidden and unavailable outside the finale",
       "status": "PASS"
     },
     {
@@ -62,6 +66,10 @@
       "status": "PASS"
     },
     {
+      "check": "Leaving the finale hides the certificate, cancels pending print, blocks reopening and preserves the name on return",
+      "status": "PASS"
+    },
+    {
       "check": "Reduced motion stops bounce and avoids duplicate triggers",
       "status": "PASS"
     },
@@ -78,7 +86,7 @@
       "status": "PASS"
     }
   ],
-  "browserVisualQA": "Certificate flow exercised in the in-app Chromium browser for RISE_Story.html and index.html; full responsive/touch pass remains a maintainer check",
+  "browserVisualQA": "Run python tests/certificate_browser.py for desktop/mobile certificate checks across both stories, offline preview and local Webflow blocks; results in .qa-scenes/certificate-browser-results.json. Published Webflow and touch gestures are not covered.",
   "vectorVisualQA": "Certificate SVG rendered in Chrome at 1123 × 794 and reviewed",
   "testEnvironment": "jsdom + actual GSAP 3.13.0 / ScrollTrigger 3.13.0"
 }
